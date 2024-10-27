@@ -37,8 +37,12 @@
       <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="ReaLTaiizor">
+      <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\ReaLTaiizor.3.8.0.7\lib\net48\ReaLTaiizor.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
