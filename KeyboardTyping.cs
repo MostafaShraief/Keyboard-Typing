@@ -31,6 +31,7 @@ namespace Keyboard_Typing
             public Color DefaulttxtColor;
             public Color WrongtxtColor;
             public Color CorrecttxtColor;
+            public Color BackgroundtxtColor;
         }
 
         private stSettings Settings;
@@ -87,6 +88,11 @@ namespace Keyboard_Typing
             rtxtOutput.Select(ind, range);
             // change its color
             rtxtOutput.SelectionColor = color;
+            // change background color
+            if (color != Settings.DefaulttxtColor)
+                rtxtOutput.SelectionBackColor = Settings.BackgroundtxtColor;
+            else
+                rtxtOutput.SelectionBackColor = Color.Transparent;
             // change font style
             rtxtOutput.SelectionFont = new Font(rtxtOutput.SelectionFont, fontStyle);
 
@@ -144,6 +150,7 @@ namespace Keyboard_Typing
             Settings.DefaulttxtColor = Color.Black;
             Settings.WrongtxtColor = Color.Red;
             Settings.CorrecttxtColor = Color.Green;
+            Settings.BackgroundtxtColor = Color.Yellow;
             InitializeKeyboard();
         }
 
