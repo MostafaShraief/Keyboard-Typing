@@ -3,9 +3,8 @@
 **This Project Is Under Working For Now**
 
 ## Next Step
-1. **Mapping keyboard buttons** to interact with user inputs.
-2. Trying to add **responsive design** feature to the program.
-3. **Add texts for typing** and choose any one randomly.
+1. Trying to add **responsive design** feature to the program.
+2. **Add texts for typing** and choose any one randomly.
 
 ## Improvments
 1. Settings for manipulating themes, fonts, custom, colors, etc..
