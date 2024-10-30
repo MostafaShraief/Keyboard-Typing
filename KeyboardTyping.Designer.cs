@@ -33,39 +33,39 @@
             this.rtxtInput = new System.Windows.Forms.RichTextBox();
             this.flp1 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button14 = new Guna.UI2.WinForms.Guna2Button();
-            this.b1 = new Guna.UI2.WinForms.Guna2Button();
-            this.b2 = new Guna.UI2.WinForms.Guna2Button();
-            this.b3 = new Guna.UI2.WinForms.Guna2Button();
-            this.b4 = new Guna.UI2.WinForms.Guna2Button();
-            this.b5 = new Guna.UI2.WinForms.Guna2Button();
-            this.b6 = new Guna.UI2.WinForms.Guna2Button();
-            this.b = new Guna.UI2.WinForms.Guna2Button();
-            this.b8 = new Guna.UI2.WinForms.Guna2Button();
-            this.b9 = new Guna.UI2.WinForms.Guna2Button();
-            this.b0 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn = new Guna.UI2.WinForms.Guna2Button();
+            this.btn1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn7 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn8 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn9 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn0 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUnderScore = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEquall = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button32 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button20 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button21 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button22 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button23 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button24 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button25 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button26 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button27 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button28 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button29 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button30 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTap = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQ = new Guna.UI2.WinForms.Guna2Button();
+            this.btnA = new Guna.UI2.WinForms.Guna2Button();
+            this.btnE = new Guna.UI2.WinForms.Guna2Button();
+            this.btnR = new Guna.UI2.WinForms.Guna2Button();
+            this.btnT = new Guna.UI2.WinForms.Guna2Button();
+            this.btnY = new Guna.UI2.WinForms.Guna2Button();
+            this.btnU = new Guna.UI2.WinForms.Guna2Button();
+            this.btnI = new Guna.UI2.WinForms.Guna2Button();
+            this.btnO = new Guna.UI2.WinForms.Guna2Button();
+            this.btnP = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBraket1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button31 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button33 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button49 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCapsLock = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button38 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button39 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button40 = new Guna.UI2.WinForms.Guna2Button();
@@ -149,7 +149,7 @@
             this.rtxtOutput.Size = new System.Drawing.Size(1062, 364);
             this.rtxtOutput.TabIndex = 2;
             this.rtxtOutput.TabStop = false;
-            this.rtxtOutput.Text = "Mostafa Shraief";
+            this.rtxtOutput.Text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
             this.rtxtOutput.Click += new System.EventHandler(this.rtxtOutput_Click);
             this.rtxtOutput.Enter += new System.EventHandler(this.rtxtOutput_Click);
             // 
@@ -163,43 +163,44 @@
             this.rtxtInput.Text = "";
             this.rtxtInput.TextChanged += new System.EventHandler(this.rtxtInput_TextChanged);
             this.rtxtInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtxtInput_KeyDown);
+            this.rtxtInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.rtxtInput_KeyUp);
             // 
             // flp1
             // 
             this.flp1.Controls.Add(this.guna2PictureBox2);
-            this.flp1.Controls.Add(this.guna2Button14);
-            this.flp1.Controls.Add(this.b1);
-            this.flp1.Controls.Add(this.b2);
-            this.flp1.Controls.Add(this.b3);
-            this.flp1.Controls.Add(this.b4);
-            this.flp1.Controls.Add(this.b5);
-            this.flp1.Controls.Add(this.b6);
-            this.flp1.Controls.Add(this.b);
-            this.flp1.Controls.Add(this.b8);
-            this.flp1.Controls.Add(this.b9);
-            this.flp1.Controls.Add(this.b0);
-            this.flp1.Controls.Add(this.guna2Button12);
-            this.flp1.Controls.Add(this.guna2Button13);
-            this.flp1.Controls.Add(this.guna2Button15);
+            this.flp1.Controls.Add(this.btn);
+            this.flp1.Controls.Add(this.btn1);
+            this.flp1.Controls.Add(this.btn2);
+            this.flp1.Controls.Add(this.btn3);
+            this.flp1.Controls.Add(this.btn4);
+            this.flp1.Controls.Add(this.btn5);
+            this.flp1.Controls.Add(this.btn6);
+            this.flp1.Controls.Add(this.btn7);
+            this.flp1.Controls.Add(this.btn8);
+            this.flp1.Controls.Add(this.btn9);
+            this.flp1.Controls.Add(this.btn0);
+            this.flp1.Controls.Add(this.btnUnderScore);
+            this.flp1.Controls.Add(this.btnEquall);
+            this.flp1.Controls.Add(this.btnDelete);
             this.flp1.Controls.Add(this.guna2PictureBox1);
             this.flp1.Controls.Add(this.guna2PictureBox3);
-            this.flp1.Controls.Add(this.guna2Button32);
-            this.flp1.Controls.Add(this.guna2Button20);
-            this.flp1.Controls.Add(this.guna2Button21);
-            this.flp1.Controls.Add(this.guna2Button22);
-            this.flp1.Controls.Add(this.guna2Button23);
-            this.flp1.Controls.Add(this.guna2Button24);
-            this.flp1.Controls.Add(this.guna2Button25);
-            this.flp1.Controls.Add(this.guna2Button26);
-            this.flp1.Controls.Add(this.guna2Button27);
-            this.flp1.Controls.Add(this.guna2Button28);
-            this.flp1.Controls.Add(this.guna2Button29);
-            this.flp1.Controls.Add(this.guna2Button30);
+            this.flp1.Controls.Add(this.btnTap);
+            this.flp1.Controls.Add(this.btnQ);
+            this.flp1.Controls.Add(this.btnA);
+            this.flp1.Controls.Add(this.btnE);
+            this.flp1.Controls.Add(this.btnR);
+            this.flp1.Controls.Add(this.btnT);
+            this.flp1.Controls.Add(this.btnY);
+            this.flp1.Controls.Add(this.btnU);
+            this.flp1.Controls.Add(this.btnI);
+            this.flp1.Controls.Add(this.btnO);
+            this.flp1.Controls.Add(this.btnP);
+            this.flp1.Controls.Add(this.btnBraket1);
             this.flp1.Controls.Add(this.guna2Button31);
             this.flp1.Controls.Add(this.guna2Button33);
             this.flp1.Controls.Add(this.guna2PictureBox4);
             this.flp1.Controls.Add(this.guna2PictureBox5);
-            this.flp1.Controls.Add(this.guna2Button49);
+            this.flp1.Controls.Add(this.btnCapsLock);
             this.flp1.Controls.Add(this.guna2Button38);
             this.flp1.Controls.Add(this.guna2Button39);
             this.flp1.Controls.Add(this.guna2Button40);
@@ -250,341 +251,341 @@
             this.guna2PictureBox2.TabIndex = 83;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // guna2Button14
+            // btn
             // 
-            this.guna2Button14.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button14.BorderRadius = 5;
-            this.guna2Button14.BorderThickness = 3;
-            this.guna2Button14.CheckedState.Parent = this.guna2Button14;
-            this.guna2Button14.CustomImages.Parent = this.guna2Button14;
-            this.guna2Button14.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button14.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button14.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button14.HoverState.Parent = this.guna2Button14;
-            this.guna2Button14.Location = new System.Drawing.Point(124, 3);
-            this.guna2Button14.Name = "guna2Button14";
-            this.guna2Button14.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button14.PressedDepth = 0;
-            this.guna2Button14.ShadowDecoration.Parent = this.guna2Button14;
-            this.guna2Button14.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button14.TabIndex = 13;
-            this.guna2Button14.TabStop = false;
-            this.guna2Button14.Tag = "`~";
-            this.guna2Button14.Text = "~--`";
-            this.guna2Button14.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn.BackColor = System.Drawing.Color.Transparent;
+            this.btn.BorderRadius = 5;
+            this.btn.BorderThickness = 3;
+            this.btn.CheckedState.Parent = this.btn;
+            this.btn.CustomImages.Parent = this.btn;
+            this.btn.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn.ForeColor = System.Drawing.Color.Black;
+            this.btn.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn.HoverState.Parent = this.btn;
+            this.btn.Location = new System.Drawing.Point(124, 3);
+            this.btn.Name = "btn";
+            this.btn.PressedColor = System.Drawing.Color.Transparent;
+            this.btn.PressedDepth = 0;
+            this.btn.ShadowDecoration.Parent = this.btn;
+            this.btn.Size = new System.Drawing.Size(50, 50);
+            this.btn.TabIndex = 13;
+            this.btn.TabStop = false;
+            this.btn.Tag = "Oemtilde";
+            this.btn.Text = "~--`";
+            this.btn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b1
+            // btn1
             // 
-            this.b1.BackColor = System.Drawing.Color.Transparent;
-            this.b1.BorderRadius = 5;
-            this.b1.BorderThickness = 3;
-            this.b1.CheckedState.Parent = this.b1;
-            this.b1.CustomImages.Parent = this.b1;
-            this.b1.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.b1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b1.ForeColor = System.Drawing.Color.Black;
-            this.b1.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b1.HoverState.Parent = this.b1;
-            this.b1.Location = new System.Drawing.Point(180, 3);
-            this.b1.Name = "b1";
-            this.b1.PressedColor = System.Drawing.Color.Transparent;
-            this.b1.PressedDepth = 0;
-            this.b1.ShadowDecoration.Parent = this.b1;
-            this.b1.Size = new System.Drawing.Size(50, 50);
-            this.b1.TabIndex = 0;
-            this.b1.TabStop = false;
-            this.b1.Tag = "!1";
-            this.b1.Text = "!--1";
-            this.b1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn1.BackColor = System.Drawing.Color.Transparent;
+            this.btn1.BorderRadius = 5;
+            this.btn1.BorderThickness = 3;
+            this.btn1.CheckedState.Parent = this.btn1;
+            this.btn1.CustomImages.Parent = this.btn1;
+            this.btn1.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btn1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn1.ForeColor = System.Drawing.Color.Black;
+            this.btn1.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn1.HoverState.Parent = this.btn1;
+            this.btn1.Location = new System.Drawing.Point(180, 3);
+            this.btn1.Name = "btn1";
+            this.btn1.PressedColor = System.Drawing.Color.Transparent;
+            this.btn1.PressedDepth = 0;
+            this.btn1.ShadowDecoration.Parent = this.btn1;
+            this.btn1.Size = new System.Drawing.Size(50, 50);
+            this.btn1.TabIndex = 0;
+            this.btn1.TabStop = false;
+            this.btn1.Tag = "D1";
+            this.btn1.Text = "!--1";
+            this.btn1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b2
+            // btn2
             // 
-            this.b2.BackColor = System.Drawing.Color.Transparent;
-            this.b2.BorderRadius = 5;
-            this.b2.BorderThickness = 3;
-            this.b2.CheckedState.Parent = this.b2;
-            this.b2.CustomImages.Parent = this.b2;
-            this.b2.FillColor = System.Drawing.Color.YellowGreen;
-            this.b2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b2.ForeColor = System.Drawing.Color.Black;
-            this.b2.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b2.HoverState.Parent = this.b2;
-            this.b2.Location = new System.Drawing.Point(236, 3);
-            this.b2.Name = "b2";
-            this.b2.PressedColor = System.Drawing.Color.Transparent;
-            this.b2.PressedDepth = 0;
-            this.b2.ShadowDecoration.Parent = this.b2;
-            this.b2.Size = new System.Drawing.Size(50, 50);
-            this.b2.TabIndex = 1;
-            this.b2.TabStop = false;
-            this.b2.Tag = "@2";
-            this.b2.Text = "@--2";
-            this.b2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn2.BackColor = System.Drawing.Color.Transparent;
+            this.btn2.BorderRadius = 5;
+            this.btn2.BorderThickness = 3;
+            this.btn2.CheckedState.Parent = this.btn2;
+            this.btn2.CustomImages.Parent = this.btn2;
+            this.btn2.FillColor = System.Drawing.Color.YellowGreen;
+            this.btn2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn2.ForeColor = System.Drawing.Color.Black;
+            this.btn2.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn2.HoverState.Parent = this.btn2;
+            this.btn2.Location = new System.Drawing.Point(236, 3);
+            this.btn2.Name = "btn2";
+            this.btn2.PressedColor = System.Drawing.Color.Transparent;
+            this.btn2.PressedDepth = 0;
+            this.btn2.ShadowDecoration.Parent = this.btn2;
+            this.btn2.Size = new System.Drawing.Size(50, 50);
+            this.btn2.TabIndex = 1;
+            this.btn2.TabStop = false;
+            this.btn2.Tag = "D2";
+            this.btn2.Text = "@--2";
+            this.btn2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b3
+            // btn3
             // 
-            this.b3.BackColor = System.Drawing.Color.Transparent;
-            this.b3.BorderRadius = 5;
-            this.b3.BorderThickness = 3;
-            this.b3.CheckedState.Parent = this.b3;
-            this.b3.CustomImages.Parent = this.b3;
-            this.b3.FillColor = System.Drawing.Color.MediumPurple;
-            this.b3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b3.ForeColor = System.Drawing.Color.Black;
-            this.b3.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b3.HoverState.Parent = this.b3;
-            this.b3.Location = new System.Drawing.Point(292, 3);
-            this.b3.Name = "b3";
-            this.b3.PressedColor = System.Drawing.Color.Transparent;
-            this.b3.PressedDepth = 0;
-            this.b3.ShadowDecoration.Parent = this.b3;
-            this.b3.Size = new System.Drawing.Size(50, 50);
-            this.b3.TabIndex = 2;
-            this.b3.TabStop = false;
-            this.b3.Tag = "#3";
-            this.b3.Text = "#--3";
-            this.b3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn3.BackColor = System.Drawing.Color.Transparent;
+            this.btn3.BorderRadius = 5;
+            this.btn3.BorderThickness = 3;
+            this.btn3.CheckedState.Parent = this.btn3;
+            this.btn3.CustomImages.Parent = this.btn3;
+            this.btn3.FillColor = System.Drawing.Color.MediumPurple;
+            this.btn3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn3.ForeColor = System.Drawing.Color.Black;
+            this.btn3.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn3.HoverState.Parent = this.btn3;
+            this.btn3.Location = new System.Drawing.Point(292, 3);
+            this.btn3.Name = "btn3";
+            this.btn3.PressedColor = System.Drawing.Color.Transparent;
+            this.btn3.PressedDepth = 0;
+            this.btn3.ShadowDecoration.Parent = this.btn3;
+            this.btn3.Size = new System.Drawing.Size(50, 50);
+            this.btn3.TabIndex = 2;
+            this.btn3.TabStop = false;
+            this.btn3.Tag = "D3";
+            this.btn3.Text = "#--3";
+            this.btn3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b4
+            // btn4
             // 
-            this.b4.BackColor = System.Drawing.Color.Transparent;
-            this.b4.BorderRadius = 5;
-            this.b4.BorderThickness = 3;
-            this.b4.CheckedState.Parent = this.b4;
-            this.b4.CustomImages.Parent = this.b4;
-            this.b4.FillColor = System.Drawing.Color.DodgerBlue;
-            this.b4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b4.ForeColor = System.Drawing.Color.Black;
-            this.b4.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b4.HoverState.Parent = this.b4;
-            this.b4.Location = new System.Drawing.Point(348, 3);
-            this.b4.Name = "b4";
-            this.b4.PressedColor = System.Drawing.Color.Transparent;
-            this.b4.PressedDepth = 0;
-            this.b4.ShadowDecoration.Parent = this.b4;
-            this.b4.Size = new System.Drawing.Size(50, 50);
-            this.b4.TabIndex = 3;
-            this.b4.TabStop = false;
-            this.b4.Tag = "$4";
-            this.b4.Text = "$--4";
-            this.b4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn4.BackColor = System.Drawing.Color.Transparent;
+            this.btn4.BorderRadius = 5;
+            this.btn4.BorderThickness = 3;
+            this.btn4.CheckedState.Parent = this.btn4;
+            this.btn4.CustomImages.Parent = this.btn4;
+            this.btn4.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn4.ForeColor = System.Drawing.Color.Black;
+            this.btn4.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn4.HoverState.Parent = this.btn4;
+            this.btn4.Location = new System.Drawing.Point(348, 3);
+            this.btn4.Name = "btn4";
+            this.btn4.PressedColor = System.Drawing.Color.Transparent;
+            this.btn4.PressedDepth = 0;
+            this.btn4.ShadowDecoration.Parent = this.btn4;
+            this.btn4.Size = new System.Drawing.Size(50, 50);
+            this.btn4.TabIndex = 3;
+            this.btn4.TabStop = false;
+            this.btn4.Tag = "D4";
+            this.btn4.Text = "$--4";
+            this.btn4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b5
+            // btn5
             // 
-            this.b5.BackColor = System.Drawing.Color.Transparent;
-            this.b5.BorderRadius = 5;
-            this.b5.BorderThickness = 3;
-            this.b5.CheckedState.Parent = this.b5;
-            this.b5.CustomImages.Parent = this.b5;
-            this.b5.FillColor = System.Drawing.Color.DodgerBlue;
-            this.b5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b5.ForeColor = System.Drawing.Color.Black;
-            this.b5.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b5.HoverState.Parent = this.b5;
-            this.b5.Location = new System.Drawing.Point(404, 3);
-            this.b5.Name = "b5";
-            this.b5.PressedColor = System.Drawing.Color.Transparent;
-            this.b5.PressedDepth = 0;
-            this.b5.ShadowDecoration.Parent = this.b5;
-            this.b5.Size = new System.Drawing.Size(50, 50);
-            this.b5.TabIndex = 4;
-            this.b5.TabStop = false;
-            this.b5.Tag = "%6";
-            this.b5.Text = "%--5";
-            this.b5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn5.BackColor = System.Drawing.Color.Transparent;
+            this.btn5.BorderRadius = 5;
+            this.btn5.BorderThickness = 3;
+            this.btn5.CheckedState.Parent = this.btn5;
+            this.btn5.CustomImages.Parent = this.btn5;
+            this.btn5.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn5.ForeColor = System.Drawing.Color.Black;
+            this.btn5.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn5.HoverState.Parent = this.btn5;
+            this.btn5.Location = new System.Drawing.Point(404, 3);
+            this.btn5.Name = "btn5";
+            this.btn5.PressedColor = System.Drawing.Color.Transparent;
+            this.btn5.PressedDepth = 0;
+            this.btn5.ShadowDecoration.Parent = this.btn5;
+            this.btn5.Size = new System.Drawing.Size(50, 50);
+            this.btn5.TabIndex = 4;
+            this.btn5.TabStop = false;
+            this.btn5.Tag = "D5";
+            this.btn5.Text = "%--5";
+            this.btn5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b6
+            // btn6
             // 
-            this.b6.BackColor = System.Drawing.Color.Transparent;
-            this.b6.BorderRadius = 5;
-            this.b6.BorderThickness = 3;
-            this.b6.CheckedState.Parent = this.b6;
-            this.b6.CustomImages.Parent = this.b6;
-            this.b6.FillColor = System.Drawing.Color.DodgerBlue;
-            this.b6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b6.ForeColor = System.Drawing.Color.Black;
-            this.b6.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b6.HoverState.Parent = this.b6;
-            this.b6.Location = new System.Drawing.Point(460, 3);
-            this.b6.Name = "b6";
-            this.b6.PressedColor = System.Drawing.Color.Transparent;
-            this.b6.PressedDepth = 0;
-            this.b6.ShadowDecoration.Parent = this.b6;
-            this.b6.Size = new System.Drawing.Size(50, 50);
-            this.b6.TabIndex = 6;
-            this.b6.TabStop = false;
-            this.b6.Tag = "^6";
-            this.b6.Text = "^--6";
-            this.b6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn6.BackColor = System.Drawing.Color.Transparent;
+            this.btn6.BorderRadius = 5;
+            this.btn6.BorderThickness = 3;
+            this.btn6.CheckedState.Parent = this.btn6;
+            this.btn6.CustomImages.Parent = this.btn6;
+            this.btn6.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn6.ForeColor = System.Drawing.Color.Black;
+            this.btn6.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn6.HoverState.Parent = this.btn6;
+            this.btn6.Location = new System.Drawing.Point(460, 3);
+            this.btn6.Name = "btn6";
+            this.btn6.PressedColor = System.Drawing.Color.Transparent;
+            this.btn6.PressedDepth = 0;
+            this.btn6.ShadowDecoration.Parent = this.btn6;
+            this.btn6.Size = new System.Drawing.Size(50, 50);
+            this.btn6.TabIndex = 6;
+            this.btn6.TabStop = false;
+            this.btn6.Tag = "D6";
+            this.btn6.Text = "^--6";
+            this.btn6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b
+            // btn7
             // 
-            this.b.BackColor = System.Drawing.Color.Transparent;
-            this.b.BorderRadius = 5;
-            this.b.BorderThickness = 3;
-            this.b.CheckedState.Parent = this.b;
-            this.b.CustomImages.Parent = this.b;
-            this.b.FillColor = System.Drawing.Color.DodgerBlue;
-            this.b.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b.ForeColor = System.Drawing.Color.Black;
-            this.b.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b.HoverState.Parent = this.b;
-            this.b.Location = new System.Drawing.Point(516, 3);
-            this.b.Name = "b";
-            this.b.PressedColor = System.Drawing.Color.Transparent;
-            this.b.PressedDepth = 0;
-            this.b.ShadowDecoration.Parent = this.b;
-            this.b.Size = new System.Drawing.Size(50, 50);
-            this.b.TabIndex = 7;
-            this.b.TabStop = false;
-            this.b.Tag = "&7";
-            this.b.Text = "&--7";
-            this.b.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn7.BackColor = System.Drawing.Color.Transparent;
+            this.btn7.BorderRadius = 5;
+            this.btn7.BorderThickness = 3;
+            this.btn7.CheckedState.Parent = this.btn7;
+            this.btn7.CustomImages.Parent = this.btn7;
+            this.btn7.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btn7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn7.ForeColor = System.Drawing.Color.Black;
+            this.btn7.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn7.HoverState.Parent = this.btn7;
+            this.btn7.Location = new System.Drawing.Point(516, 3);
+            this.btn7.Name = "btn7";
+            this.btn7.PressedColor = System.Drawing.Color.Transparent;
+            this.btn7.PressedDepth = 0;
+            this.btn7.ShadowDecoration.Parent = this.btn7;
+            this.btn7.Size = new System.Drawing.Size(50, 50);
+            this.btn7.TabIndex = 7;
+            this.btn7.TabStop = false;
+            this.btn7.Tag = "D7";
+            this.btn7.Text = "&--7";
+            this.btn7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b8
+            // btn8
             // 
-            this.b8.BackColor = System.Drawing.Color.Transparent;
-            this.b8.BorderRadius = 5;
-            this.b8.BorderThickness = 3;
-            this.b8.CheckedState.Parent = this.b8;
-            this.b8.CustomImages.Parent = this.b8;
-            this.b8.FillColor = System.Drawing.Color.MediumPurple;
-            this.b8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b8.ForeColor = System.Drawing.Color.Black;
-            this.b8.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b8.HoverState.Parent = this.b8;
-            this.b8.Location = new System.Drawing.Point(572, 3);
-            this.b8.Name = "b8";
-            this.b8.PressedColor = System.Drawing.Color.Transparent;
-            this.b8.PressedDepth = 0;
-            this.b8.ShadowDecoration.Parent = this.b8;
-            this.b8.Size = new System.Drawing.Size(50, 50);
-            this.b8.TabIndex = 8;
-            this.b8.TabStop = false;
-            this.b8.Tag = "*8";
-            this.b8.Text = "*--8";
-            this.b8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn8.BackColor = System.Drawing.Color.Transparent;
+            this.btn8.BorderRadius = 5;
+            this.btn8.BorderThickness = 3;
+            this.btn8.CheckedState.Parent = this.btn8;
+            this.btn8.CustomImages.Parent = this.btn8;
+            this.btn8.FillColor = System.Drawing.Color.MediumPurple;
+            this.btn8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn8.ForeColor = System.Drawing.Color.Black;
+            this.btn8.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn8.HoverState.Parent = this.btn8;
+            this.btn8.Location = new System.Drawing.Point(572, 3);
+            this.btn8.Name = "btn8";
+            this.btn8.PressedColor = System.Drawing.Color.Transparent;
+            this.btn8.PressedDepth = 0;
+            this.btn8.ShadowDecoration.Parent = this.btn8;
+            this.btn8.Size = new System.Drawing.Size(50, 50);
+            this.btn8.TabIndex = 8;
+            this.btn8.TabStop = false;
+            this.btn8.Tag = "D8";
+            this.btn8.Text = "*--8";
+            this.btn8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b9
+            // btn9
             // 
-            this.b9.BackColor = System.Drawing.Color.Transparent;
-            this.b9.BorderRadius = 5;
-            this.b9.BorderThickness = 3;
-            this.b9.CheckedState.Parent = this.b9;
-            this.b9.CustomImages.Parent = this.b9;
-            this.b9.FillColor = System.Drawing.Color.YellowGreen;
-            this.b9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b9.ForeColor = System.Drawing.Color.Black;
-            this.b9.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b9.HoverState.Parent = this.b9;
-            this.b9.Location = new System.Drawing.Point(628, 3);
-            this.b9.Name = "b9";
-            this.b9.PressedColor = System.Drawing.Color.Transparent;
-            this.b9.PressedDepth = 0;
-            this.b9.ShadowDecoration.Parent = this.b9;
-            this.b9.Size = new System.Drawing.Size(50, 50);
-            this.b9.TabIndex = 9;
-            this.b9.TabStop = false;
-            this.b9.Tag = "(9";
-            this.b9.Text = "(--9";
-            this.b9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn9.BackColor = System.Drawing.Color.Transparent;
+            this.btn9.BorderRadius = 5;
+            this.btn9.BorderThickness = 3;
+            this.btn9.CheckedState.Parent = this.btn9;
+            this.btn9.CustomImages.Parent = this.btn9;
+            this.btn9.FillColor = System.Drawing.Color.YellowGreen;
+            this.btn9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn9.ForeColor = System.Drawing.Color.Black;
+            this.btn9.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn9.HoverState.Parent = this.btn9;
+            this.btn9.Location = new System.Drawing.Point(628, 3);
+            this.btn9.Name = "btn9";
+            this.btn9.PressedColor = System.Drawing.Color.Transparent;
+            this.btn9.PressedDepth = 0;
+            this.btn9.ShadowDecoration.Parent = this.btn9;
+            this.btn9.Size = new System.Drawing.Size(50, 50);
+            this.btn9.TabIndex = 9;
+            this.btn9.TabStop = false;
+            this.btn9.Tag = "D9";
+            this.btn9.Text = "(--9";
+            this.btn9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // b0
+            // btn0
             // 
-            this.b0.BackColor = System.Drawing.Color.Transparent;
-            this.b0.BorderRadius = 5;
-            this.b0.BorderThickness = 3;
-            this.b0.CheckedState.Parent = this.b0;
-            this.b0.CustomImages.Parent = this.b0;
-            this.b0.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.b0.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b0.ForeColor = System.Drawing.Color.Black;
-            this.b0.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.b0.HoverState.Parent = this.b0;
-            this.b0.Location = new System.Drawing.Point(684, 3);
-            this.b0.Name = "b0";
-            this.b0.PressedColor = System.Drawing.Color.Transparent;
-            this.b0.PressedDepth = 0;
-            this.b0.ShadowDecoration.Parent = this.b0;
-            this.b0.Size = new System.Drawing.Size(50, 50);
-            this.b0.TabIndex = 10;
-            this.b0.TabStop = false;
-            this.b0.Tag = ")0";
-            this.b0.Text = ")--0";
-            this.b0.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn0.BackColor = System.Drawing.Color.Transparent;
+            this.btn0.BorderRadius = 5;
+            this.btn0.BorderThickness = 3;
+            this.btn0.CheckedState.Parent = this.btn0;
+            this.btn0.CustomImages.Parent = this.btn0;
+            this.btn0.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btn0.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn0.ForeColor = System.Drawing.Color.Black;
+            this.btn0.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn0.HoverState.Parent = this.btn0;
+            this.btn0.Location = new System.Drawing.Point(684, 3);
+            this.btn0.Name = "btn0";
+            this.btn0.PressedColor = System.Drawing.Color.Transparent;
+            this.btn0.PressedDepth = 0;
+            this.btn0.ShadowDecoration.Parent = this.btn0;
+            this.btn0.Size = new System.Drawing.Size(50, 50);
+            this.btn0.TabIndex = 10;
+            this.btn0.TabStop = false;
+            this.btn0.Tag = "D0";
+            this.btn0.Text = ")--0";
+            this.btn0.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button12
+            // btnUnderScore
             // 
-            this.guna2Button12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button12.BorderRadius = 5;
-            this.guna2Button12.BorderThickness = 3;
-            this.guna2Button12.CheckedState.Parent = this.guna2Button12;
-            this.guna2Button12.CustomImages.Parent = this.guna2Button12;
-            this.guna2Button12.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button12.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button12.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button12.HoverState.Parent = this.guna2Button12;
-            this.guna2Button12.Location = new System.Drawing.Point(740, 3);
-            this.guna2Button12.Name = "guna2Button12";
-            this.guna2Button12.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button12.PressedDepth = 0;
-            this.guna2Button12.ShadowDecoration.Parent = this.guna2Button12;
-            this.guna2Button12.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button12.TabIndex = 11;
-            this.guna2Button12.TabStop = false;
-            this.guna2Button12.Tag = "_-";
-            this.guna2Button12.Text = "_---";
-            this.guna2Button12.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnUnderScore.BackColor = System.Drawing.Color.Transparent;
+            this.btnUnderScore.BorderRadius = 5;
+            this.btnUnderScore.BorderThickness = 3;
+            this.btnUnderScore.CheckedState.Parent = this.btnUnderScore;
+            this.btnUnderScore.CustomImages.Parent = this.btnUnderScore;
+            this.btnUnderScore.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnUnderScore.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUnderScore.ForeColor = System.Drawing.Color.Black;
+            this.btnUnderScore.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnUnderScore.HoverState.Parent = this.btnUnderScore;
+            this.btnUnderScore.Location = new System.Drawing.Point(740, 3);
+            this.btnUnderScore.Name = "btnUnderScore";
+            this.btnUnderScore.PressedColor = System.Drawing.Color.Transparent;
+            this.btnUnderScore.PressedDepth = 0;
+            this.btnUnderScore.ShadowDecoration.Parent = this.btnUnderScore;
+            this.btnUnderScore.Size = new System.Drawing.Size(50, 50);
+            this.btnUnderScore.TabIndex = 11;
+            this.btnUnderScore.TabStop = false;
+            this.btnUnderScore.Tag = "OemMinus";
+            this.btnUnderScore.Text = "_---";
+            this.btnUnderScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button13
+            // btnEquall
             // 
-            this.guna2Button13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button13.BorderRadius = 5;
-            this.guna2Button13.BorderThickness = 3;
-            this.guna2Button13.CheckedState.Parent = this.guna2Button13;
-            this.guna2Button13.CustomImages.Parent = this.guna2Button13;
-            this.guna2Button13.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button13.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button13.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button13.HoverState.Parent = this.guna2Button13;
-            this.guna2Button13.Location = new System.Drawing.Point(796, 3);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button13.PressedDepth = 0;
-            this.guna2Button13.ShadowDecoration.Parent = this.guna2Button13;
-            this.guna2Button13.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button13.TabIndex = 12;
-            this.guna2Button13.TabStop = false;
-            this.guna2Button13.Tag = "+=";
-            this.guna2Button13.Text = "+--=";
-            this.guna2Button13.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnEquall.BackColor = System.Drawing.Color.Transparent;
+            this.btnEquall.BorderRadius = 5;
+            this.btnEquall.BorderThickness = 3;
+            this.btnEquall.CheckedState.Parent = this.btnEquall;
+            this.btnEquall.CustomImages.Parent = this.btnEquall;
+            this.btnEquall.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnEquall.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEquall.ForeColor = System.Drawing.Color.Black;
+            this.btnEquall.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnEquall.HoverState.Parent = this.btnEquall;
+            this.btnEquall.Location = new System.Drawing.Point(796, 3);
+            this.btnEquall.Name = "btnEquall";
+            this.btnEquall.PressedColor = System.Drawing.Color.Transparent;
+            this.btnEquall.PressedDepth = 0;
+            this.btnEquall.ShadowDecoration.Parent = this.btnEquall;
+            this.btnEquall.Size = new System.Drawing.Size(50, 50);
+            this.btnEquall.TabIndex = 12;
+            this.btnEquall.TabStop = false;
+            this.btnEquall.Tag = "Oemplus";
+            this.btnEquall.Text = "+--=";
+            this.btnEquall.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button15
+            // btnDelete
             // 
-            this.guna2Button15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button15.BorderRadius = 5;
-            this.guna2Button15.BorderThickness = 3;
-            this.guna2Button15.CheckedState.Parent = this.guna2Button15;
-            this.guna2Button15.CustomImages.Parent = this.guna2Button15;
-            this.guna2Button15.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button15.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button15.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button15.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button15.HoverState.Parent = this.guna2Button15;
-            this.guna2Button15.Location = new System.Drawing.Point(852, 3);
-            this.guna2Button15.Name = "guna2Button15";
-            this.guna2Button15.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button15.PressedDepth = 0;
-            this.guna2Button15.ShadowDecoration.Parent = this.guna2Button15;
-            this.guna2Button15.Size = new System.Drawing.Size(78, 50);
-            this.guna2Button15.TabIndex = 14;
-            this.guna2Button15.TabStop = false;
-            this.guna2Button15.Tag = "Delete";
-            this.guna2Button15.Text = "DELETE";
-            this.guna2Button15.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BorderRadius = 5;
+            this.btnDelete.BorderThickness = 3;
+            this.btnDelete.CheckedState.Parent = this.btnDelete;
+            this.btnDelete.CustomImages.Parent = this.btnDelete;
+            this.btnDelete.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnDelete.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnDelete.HoverState.Parent = this.btnDelete;
+            this.btnDelete.Location = new System.Drawing.Point(852, 3);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.PressedColor = System.Drawing.Color.Transparent;
+            this.btnDelete.PressedDepth = 0;
+            this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
+            this.btnDelete.Size = new System.Drawing.Size(78, 50);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.TabStop = false;
+            this.btnDelete.Tag = "Back";
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2PictureBox1
             // 
@@ -604,293 +605,293 @@
             this.guna2PictureBox3.TabIndex = 84;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // guna2Button32
+            // btnTap
             // 
-            this.guna2Button32.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button32.BorderRadius = 5;
-            this.guna2Button32.BorderThickness = 3;
-            this.guna2Button32.CheckedState.Parent = this.guna2Button32;
-            this.guna2Button32.CustomImages.Parent = this.guna2Button32;
-            this.guna2Button32.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button32.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button32.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button32.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button32.HoverState.Parent = this.guna2Button32;
-            this.guna2Button32.Location = new System.Drawing.Point(124, 59);
-            this.guna2Button32.Name = "guna2Button32";
-            this.guna2Button32.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button32.PressedDepth = 0;
-            this.guna2Button32.ShadowDecoration.Parent = this.guna2Button32;
-            this.guna2Button32.Size = new System.Drawing.Size(78, 50);
-            this.guna2Button32.TabIndex = 31;
-            this.guna2Button32.TabStop = false;
-            this.guna2Button32.Tag = "Tap";
-            this.guna2Button32.Text = "TAP";
-            this.guna2Button32.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnTap.BackColor = System.Drawing.Color.Transparent;
+            this.btnTap.BorderRadius = 5;
+            this.btnTap.BorderThickness = 3;
+            this.btnTap.CheckedState.Parent = this.btnTap;
+            this.btnTap.CustomImages.Parent = this.btnTap;
+            this.btnTap.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnTap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTap.ForeColor = System.Drawing.Color.Black;
+            this.btnTap.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnTap.HoverState.Parent = this.btnTap;
+            this.btnTap.Location = new System.Drawing.Point(124, 59);
+            this.btnTap.Name = "btnTap";
+            this.btnTap.PressedColor = System.Drawing.Color.Transparent;
+            this.btnTap.PressedDepth = 0;
+            this.btnTap.ShadowDecoration.Parent = this.btnTap;
+            this.btnTap.Size = new System.Drawing.Size(78, 50);
+            this.btnTap.TabIndex = 31;
+            this.btnTap.TabStop = false;
+            this.btnTap.Tag = "Tab";
+            this.btnTap.Text = "TAB";
+            this.btnTap.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button20
+            // btnQ
             // 
-            this.guna2Button20.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button20.BorderRadius = 5;
-            this.guna2Button20.BorderThickness = 3;
-            this.guna2Button20.CheckedState.Parent = this.guna2Button20;
-            this.guna2Button20.CustomImages.Parent = this.guna2Button20;
-            this.guna2Button20.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button20.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button20.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button20.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button20.HoverState.Parent = this.guna2Button20;
-            this.guna2Button20.Location = new System.Drawing.Point(208, 59);
-            this.guna2Button20.Name = "guna2Button20";
-            this.guna2Button20.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button20.PressedDepth = 0;
-            this.guna2Button20.ShadowDecoration.Parent = this.guna2Button20;
-            this.guna2Button20.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button20.TabIndex = 19;
-            this.guna2Button20.TabStop = false;
-            this.guna2Button20.Tag = "2";
-            this.guna2Button20.Text = "Q";
-            this.guna2Button20.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnQ.BackColor = System.Drawing.Color.Transparent;
+            this.btnQ.BorderRadius = 5;
+            this.btnQ.BorderThickness = 3;
+            this.btnQ.CheckedState.Parent = this.btnQ;
+            this.btnQ.CustomImages.Parent = this.btnQ;
+            this.btnQ.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnQ.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnQ.ForeColor = System.Drawing.Color.Black;
+            this.btnQ.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnQ.HoverState.Parent = this.btnQ;
+            this.btnQ.Location = new System.Drawing.Point(208, 59);
+            this.btnQ.Name = "btnQ";
+            this.btnQ.PressedColor = System.Drawing.Color.Transparent;
+            this.btnQ.PressedDepth = 0;
+            this.btnQ.ShadowDecoration.Parent = this.btnQ;
+            this.btnQ.Size = new System.Drawing.Size(50, 50);
+            this.btnQ.TabIndex = 19;
+            this.btnQ.TabStop = false;
+            this.btnQ.Tag = "Q";
+            this.btnQ.Text = "Q";
+            this.btnQ.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button21
+            // btnA
             // 
-            this.guna2Button21.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button21.BorderRadius = 5;
-            this.guna2Button21.BorderThickness = 3;
-            this.guna2Button21.CheckedState.Parent = this.guna2Button21;
-            this.guna2Button21.CustomImages.Parent = this.guna2Button21;
-            this.guna2Button21.FillColor = System.Drawing.Color.YellowGreen;
-            this.guna2Button21.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button21.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button21.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button21.HoverState.Parent = this.guna2Button21;
-            this.guna2Button21.Location = new System.Drawing.Point(264, 59);
-            this.guna2Button21.Name = "guna2Button21";
-            this.guna2Button21.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button21.PressedDepth = 0;
-            this.guna2Button21.ShadowDecoration.Parent = this.guna2Button21;
-            this.guna2Button21.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button21.TabIndex = 20;
-            this.guna2Button21.TabStop = false;
-            this.guna2Button21.Tag = "1";
-            this.guna2Button21.Text = "W";
-            this.guna2Button21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnA.BackColor = System.Drawing.Color.Transparent;
+            this.btnA.BorderRadius = 5;
+            this.btnA.BorderThickness = 3;
+            this.btnA.CheckedState.Parent = this.btnA;
+            this.btnA.CustomImages.Parent = this.btnA;
+            this.btnA.FillColor = System.Drawing.Color.YellowGreen;
+            this.btnA.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnA.ForeColor = System.Drawing.Color.Black;
+            this.btnA.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnA.HoverState.Parent = this.btnA;
+            this.btnA.Location = new System.Drawing.Point(264, 59);
+            this.btnA.Name = "btnA";
+            this.btnA.PressedColor = System.Drawing.Color.Transparent;
+            this.btnA.PressedDepth = 0;
+            this.btnA.ShadowDecoration.Parent = this.btnA;
+            this.btnA.Size = new System.Drawing.Size(50, 50);
+            this.btnA.TabIndex = 20;
+            this.btnA.TabStop = false;
+            this.btnA.Tag = "W";
+            this.btnA.Text = "W";
+            this.btnA.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button22
+            // btnE
             // 
-            this.guna2Button22.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button22.BorderRadius = 5;
-            this.guna2Button22.BorderThickness = 3;
-            this.guna2Button22.CheckedState.Parent = this.guna2Button22;
-            this.guna2Button22.CustomImages.Parent = this.guna2Button22;
-            this.guna2Button22.FillColor = System.Drawing.Color.MediumPurple;
-            this.guna2Button22.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button22.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button22.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button22.HoverState.Parent = this.guna2Button22;
-            this.guna2Button22.Location = new System.Drawing.Point(320, 59);
-            this.guna2Button22.Name = "guna2Button22";
-            this.guna2Button22.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button22.PressedDepth = 0;
-            this.guna2Button22.ShadowDecoration.Parent = this.guna2Button22;
-            this.guna2Button22.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button22.TabIndex = 21;
-            this.guna2Button22.TabStop = false;
-            this.guna2Button22.Tag = "2";
-            this.guna2Button22.Text = "E";
-            this.guna2Button22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnE.BackColor = System.Drawing.Color.Transparent;
+            this.btnE.BorderRadius = 5;
+            this.btnE.BorderThickness = 3;
+            this.btnE.CheckedState.Parent = this.btnE;
+            this.btnE.CustomImages.Parent = this.btnE;
+            this.btnE.FillColor = System.Drawing.Color.MediumPurple;
+            this.btnE.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnE.ForeColor = System.Drawing.Color.Black;
+            this.btnE.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnE.HoverState.Parent = this.btnE;
+            this.btnE.Location = new System.Drawing.Point(320, 59);
+            this.btnE.Name = "btnE";
+            this.btnE.PressedColor = System.Drawing.Color.Transparent;
+            this.btnE.PressedDepth = 0;
+            this.btnE.ShadowDecoration.Parent = this.btnE;
+            this.btnE.Size = new System.Drawing.Size(50, 50);
+            this.btnE.TabIndex = 21;
+            this.btnE.TabStop = false;
+            this.btnE.Tag = "E";
+            this.btnE.Text = "E";
+            this.btnE.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button23
+            // btnR
             // 
-            this.guna2Button23.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button23.BorderRadius = 5;
-            this.guna2Button23.BorderThickness = 3;
-            this.guna2Button23.CheckedState.Parent = this.guna2Button23;
-            this.guna2Button23.CustomImages.Parent = this.guna2Button23;
-            this.guna2Button23.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button23.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button23.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button23.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button23.HoverState.Parent = this.guna2Button23;
-            this.guna2Button23.Location = new System.Drawing.Point(376, 59);
-            this.guna2Button23.Name = "guna2Button23";
-            this.guna2Button23.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button23.PressedDepth = 0;
-            this.guna2Button23.ShadowDecoration.Parent = this.guna2Button23;
-            this.guna2Button23.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button23.TabIndex = 22;
-            this.guna2Button23.TabStop = false;
-            this.guna2Button23.Tag = "3";
-            this.guna2Button23.Text = "R";
-            this.guna2Button23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnR.BackColor = System.Drawing.Color.Transparent;
+            this.btnR.BorderRadius = 5;
+            this.btnR.BorderThickness = 3;
+            this.btnR.CheckedState.Parent = this.btnR;
+            this.btnR.CustomImages.Parent = this.btnR;
+            this.btnR.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnR.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnR.ForeColor = System.Drawing.Color.Black;
+            this.btnR.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnR.HoverState.Parent = this.btnR;
+            this.btnR.Location = new System.Drawing.Point(376, 59);
+            this.btnR.Name = "btnR";
+            this.btnR.PressedColor = System.Drawing.Color.Transparent;
+            this.btnR.PressedDepth = 0;
+            this.btnR.ShadowDecoration.Parent = this.btnR;
+            this.btnR.Size = new System.Drawing.Size(50, 50);
+            this.btnR.TabIndex = 22;
+            this.btnR.TabStop = false;
+            this.btnR.Tag = "R";
+            this.btnR.Text = "R";
+            this.btnR.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button24
+            // btnT
             // 
-            this.guna2Button24.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button24.BorderRadius = 5;
-            this.guna2Button24.BorderThickness = 3;
-            this.guna2Button24.CheckedState.Parent = this.guna2Button24;
-            this.guna2Button24.CustomImages.Parent = this.guna2Button24;
-            this.guna2Button24.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button24.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button24.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button24.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button24.HoverState.Parent = this.guna2Button24;
-            this.guna2Button24.Location = new System.Drawing.Point(432, 59);
-            this.guna2Button24.Name = "guna2Button24";
-            this.guna2Button24.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button24.PressedDepth = 0;
-            this.guna2Button24.ShadowDecoration.Parent = this.guna2Button24;
-            this.guna2Button24.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button24.TabIndex = 23;
-            this.guna2Button24.TabStop = false;
-            this.guna2Button24.Tag = "4";
-            this.guna2Button24.Text = "T";
-            this.guna2Button24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnT.BackColor = System.Drawing.Color.Transparent;
+            this.btnT.BorderRadius = 5;
+            this.btnT.BorderThickness = 3;
+            this.btnT.CheckedState.Parent = this.btnT;
+            this.btnT.CustomImages.Parent = this.btnT;
+            this.btnT.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnT.ForeColor = System.Drawing.Color.Black;
+            this.btnT.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnT.HoverState.Parent = this.btnT;
+            this.btnT.Location = new System.Drawing.Point(432, 59);
+            this.btnT.Name = "btnT";
+            this.btnT.PressedColor = System.Drawing.Color.Transparent;
+            this.btnT.PressedDepth = 0;
+            this.btnT.ShadowDecoration.Parent = this.btnT;
+            this.btnT.Size = new System.Drawing.Size(50, 50);
+            this.btnT.TabIndex = 23;
+            this.btnT.TabStop = false;
+            this.btnT.Tag = "T";
+            this.btnT.Text = "T";
+            this.btnT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button25
+            // btnY
             // 
-            this.guna2Button25.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button25.BorderRadius = 5;
-            this.guna2Button25.BorderThickness = 3;
-            this.guna2Button25.CheckedState.Parent = this.guna2Button25;
-            this.guna2Button25.CustomImages.Parent = this.guna2Button25;
-            this.guna2Button25.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button25.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button25.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button25.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button25.HoverState.Parent = this.guna2Button25;
-            this.guna2Button25.Location = new System.Drawing.Point(488, 59);
-            this.guna2Button25.Name = "guna2Button25";
-            this.guna2Button25.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button25.PressedDepth = 0;
-            this.guna2Button25.ShadowDecoration.Parent = this.guna2Button25;
-            this.guna2Button25.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button25.TabIndex = 24;
-            this.guna2Button25.TabStop = false;
-            this.guna2Button25.Tag = "5";
-            this.guna2Button25.Text = "Y";
-            this.guna2Button25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnY.BackColor = System.Drawing.Color.Transparent;
+            this.btnY.BorderRadius = 5;
+            this.btnY.BorderThickness = 3;
+            this.btnY.CheckedState.Parent = this.btnY;
+            this.btnY.CustomImages.Parent = this.btnY;
+            this.btnY.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnY.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnY.ForeColor = System.Drawing.Color.Black;
+            this.btnY.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnY.HoverState.Parent = this.btnY;
+            this.btnY.Location = new System.Drawing.Point(488, 59);
+            this.btnY.Name = "btnY";
+            this.btnY.PressedColor = System.Drawing.Color.Transparent;
+            this.btnY.PressedDepth = 0;
+            this.btnY.ShadowDecoration.Parent = this.btnY;
+            this.btnY.Size = new System.Drawing.Size(50, 50);
+            this.btnY.TabIndex = 24;
+            this.btnY.TabStop = false;
+            this.btnY.Tag = "Y";
+            this.btnY.Text = "Y";
+            this.btnY.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button26
+            // btnU
             // 
-            this.guna2Button26.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button26.BorderRadius = 5;
-            this.guna2Button26.BorderThickness = 3;
-            this.guna2Button26.CheckedState.Parent = this.guna2Button26;
-            this.guna2Button26.CustomImages.Parent = this.guna2Button26;
-            this.guna2Button26.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2Button26.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button26.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button26.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button26.HoverState.Parent = this.guna2Button26;
-            this.guna2Button26.Location = new System.Drawing.Point(544, 59);
-            this.guna2Button26.Name = "guna2Button26";
-            this.guna2Button26.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button26.PressedDepth = 0;
-            this.guna2Button26.ShadowDecoration.Parent = this.guna2Button26;
-            this.guna2Button26.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button26.TabIndex = 25;
-            this.guna2Button26.TabStop = false;
-            this.guna2Button26.Tag = "5";
-            this.guna2Button26.Text = "U";
-            this.guna2Button26.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnU.BackColor = System.Drawing.Color.Transparent;
+            this.btnU.BorderRadius = 5;
+            this.btnU.BorderThickness = 3;
+            this.btnU.CheckedState.Parent = this.btnU;
+            this.btnU.CustomImages.Parent = this.btnU;
+            this.btnU.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnU.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnU.ForeColor = System.Drawing.Color.Black;
+            this.btnU.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnU.HoverState.Parent = this.btnU;
+            this.btnU.Location = new System.Drawing.Point(544, 59);
+            this.btnU.Name = "btnU";
+            this.btnU.PressedColor = System.Drawing.Color.Transparent;
+            this.btnU.PressedDepth = 0;
+            this.btnU.ShadowDecoration.Parent = this.btnU;
+            this.btnU.Size = new System.Drawing.Size(50, 50);
+            this.btnU.TabIndex = 25;
+            this.btnU.TabStop = false;
+            this.btnU.Tag = "U";
+            this.btnU.Text = "U";
+            this.btnU.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button27
+            // btnI
             // 
-            this.guna2Button27.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button27.BorderRadius = 5;
-            this.guna2Button27.BorderThickness = 3;
-            this.guna2Button27.CheckedState.Parent = this.guna2Button27;
-            this.guna2Button27.CustomImages.Parent = this.guna2Button27;
-            this.guna2Button27.FillColor = System.Drawing.Color.MediumPurple;
-            this.guna2Button27.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button27.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button27.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button27.HoverState.Parent = this.guna2Button27;
-            this.guna2Button27.Location = new System.Drawing.Point(600, 59);
-            this.guna2Button27.Name = "guna2Button27";
-            this.guna2Button27.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button27.PressedDepth = 0;
-            this.guna2Button27.ShadowDecoration.Parent = this.guna2Button27;
-            this.guna2Button27.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button27.TabIndex = 26;
-            this.guna2Button27.TabStop = false;
-            this.guna2Button27.Tag = "2";
-            this.guna2Button27.Text = "I";
-            this.guna2Button27.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnI.BackColor = System.Drawing.Color.Transparent;
+            this.btnI.BorderRadius = 5;
+            this.btnI.BorderThickness = 3;
+            this.btnI.CheckedState.Parent = this.btnI;
+            this.btnI.CustomImages.Parent = this.btnI;
+            this.btnI.FillColor = System.Drawing.Color.MediumPurple;
+            this.btnI.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnI.ForeColor = System.Drawing.Color.Black;
+            this.btnI.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnI.HoverState.Parent = this.btnI;
+            this.btnI.Location = new System.Drawing.Point(600, 59);
+            this.btnI.Name = "btnI";
+            this.btnI.PressedColor = System.Drawing.Color.Transparent;
+            this.btnI.PressedDepth = 0;
+            this.btnI.ShadowDecoration.Parent = this.btnI;
+            this.btnI.Size = new System.Drawing.Size(50, 50);
+            this.btnI.TabIndex = 26;
+            this.btnI.TabStop = false;
+            this.btnI.Tag = "I";
+            this.btnI.Text = "I";
+            this.btnI.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button28
+            // btnO
             // 
-            this.guna2Button28.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button28.BorderRadius = 5;
-            this.guna2Button28.BorderThickness = 3;
-            this.guna2Button28.CheckedState.Parent = this.guna2Button28;
-            this.guna2Button28.CustomImages.Parent = this.guna2Button28;
-            this.guna2Button28.FillColor = System.Drawing.Color.YellowGreen;
-            this.guna2Button28.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button28.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button28.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button28.HoverState.Parent = this.guna2Button28;
-            this.guna2Button28.Location = new System.Drawing.Point(656, 59);
-            this.guna2Button28.Name = "guna2Button28";
-            this.guna2Button28.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button28.PressedDepth = 0;
-            this.guna2Button28.ShadowDecoration.Parent = this.guna2Button28;
-            this.guna2Button28.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button28.TabIndex = 27;
-            this.guna2Button28.TabStop = false;
-            this.guna2Button28.Tag = "2";
-            this.guna2Button28.Text = "O";
-            this.guna2Button28.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnO.BackColor = System.Drawing.Color.Transparent;
+            this.btnO.BorderRadius = 5;
+            this.btnO.BorderThickness = 3;
+            this.btnO.CheckedState.Parent = this.btnO;
+            this.btnO.CustomImages.Parent = this.btnO;
+            this.btnO.FillColor = System.Drawing.Color.YellowGreen;
+            this.btnO.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnO.ForeColor = System.Drawing.Color.Black;
+            this.btnO.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnO.HoverState.Parent = this.btnO;
+            this.btnO.Location = new System.Drawing.Point(656, 59);
+            this.btnO.Name = "btnO";
+            this.btnO.PressedColor = System.Drawing.Color.Transparent;
+            this.btnO.PressedDepth = 0;
+            this.btnO.ShadowDecoration.Parent = this.btnO;
+            this.btnO.Size = new System.Drawing.Size(50, 50);
+            this.btnO.TabIndex = 27;
+            this.btnO.TabStop = false;
+            this.btnO.Tag = "O";
+            this.btnO.Text = "O";
+            this.btnO.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button29
+            // btnP
             // 
-            this.guna2Button29.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button29.BorderRadius = 5;
-            this.guna2Button29.BorderThickness = 3;
-            this.guna2Button29.CheckedState.Parent = this.guna2Button29;
-            this.guna2Button29.CustomImages.Parent = this.guna2Button29;
-            this.guna2Button29.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button29.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button29.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button29.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button29.HoverState.Parent = this.guna2Button29;
-            this.guna2Button29.Location = new System.Drawing.Point(712, 59);
-            this.guna2Button29.Name = "guna2Button29";
-            this.guna2Button29.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button29.PressedDepth = 0;
-            this.guna2Button29.ShadowDecoration.Parent = this.guna2Button29;
-            this.guna2Button29.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button29.TabIndex = 28;
-            this.guna2Button29.TabStop = false;
-            this.guna2Button29.Tag = "2";
-            this.guna2Button29.Text = "P";
-            this.guna2Button29.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnP.BackColor = System.Drawing.Color.Transparent;
+            this.btnP.BorderRadius = 5;
+            this.btnP.BorderThickness = 3;
+            this.btnP.CheckedState.Parent = this.btnP;
+            this.btnP.CustomImages.Parent = this.btnP;
+            this.btnP.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnP.ForeColor = System.Drawing.Color.Black;
+            this.btnP.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnP.HoverState.Parent = this.btnP;
+            this.btnP.Location = new System.Drawing.Point(712, 59);
+            this.btnP.Name = "btnP";
+            this.btnP.PressedColor = System.Drawing.Color.Transparent;
+            this.btnP.PressedDepth = 0;
+            this.btnP.ShadowDecoration.Parent = this.btnP;
+            this.btnP.Size = new System.Drawing.Size(50, 50);
+            this.btnP.TabIndex = 28;
+            this.btnP.TabStop = false;
+            this.btnP.Tag = "P";
+            this.btnP.Text = "P";
+            this.btnP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button30
+            // btnBraket1
             // 
-            this.guna2Button30.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button30.BorderRadius = 5;
-            this.guna2Button30.BorderThickness = 3;
-            this.guna2Button30.CheckedState.Parent = this.guna2Button30;
-            this.guna2Button30.CustomImages.Parent = this.guna2Button30;
-            this.guna2Button30.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button30.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button30.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button30.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button30.HoverState.Parent = this.guna2Button30;
-            this.guna2Button30.Location = new System.Drawing.Point(768, 59);
-            this.guna2Button30.Name = "guna2Button30";
-            this.guna2Button30.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button30.PressedDepth = 0;
-            this.guna2Button30.ShadowDecoration.Parent = this.guna2Button30;
-            this.guna2Button30.Size = new System.Drawing.Size(50, 50);
-            this.guna2Button30.TabIndex = 29;
-            this.guna2Button30.TabStop = false;
-            this.guna2Button30.Tag = "2";
-            this.guna2Button30.Text = "{--[";
-            this.guna2Button30.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnBraket1.BackColor = System.Drawing.Color.Transparent;
+            this.btnBraket1.BorderRadius = 5;
+            this.btnBraket1.BorderThickness = 3;
+            this.btnBraket1.CheckedState.Parent = this.btnBraket1;
+            this.btnBraket1.CustomImages.Parent = this.btnBraket1;
+            this.btnBraket1.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnBraket1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBraket1.ForeColor = System.Drawing.Color.Black;
+            this.btnBraket1.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnBraket1.HoverState.Parent = this.btnBraket1;
+            this.btnBraket1.Location = new System.Drawing.Point(768, 59);
+            this.btnBraket1.Name = "btnBraket1";
+            this.btnBraket1.PressedColor = System.Drawing.Color.Transparent;
+            this.btnBraket1.PressedDepth = 0;
+            this.btnBraket1.ShadowDecoration.Parent = this.btnBraket1;
+            this.btnBraket1.Size = new System.Drawing.Size(50, 50);
+            this.btnBraket1.TabIndex = 29;
+            this.btnBraket1.TabStop = false;
+            this.btnBraket1.Tag = "OemOpenBrackets";
+            this.btnBraket1.Text = "{--[";
+            this.btnBraket1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2Button31
             // 
@@ -912,7 +913,7 @@
             this.guna2Button31.Size = new System.Drawing.Size(50, 50);
             this.guna2Button31.TabIndex = 30;
             this.guna2Button31.TabStop = false;
-            this.guna2Button31.Tag = "1";
+            this.guna2Button31.Tag = "OemCloseBrackets";
             this.guna2Button31.Text = "}--]";
             this.guna2Button31.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -936,7 +937,7 @@
             this.guna2Button33.Size = new System.Drawing.Size(50, 50);
             this.guna2Button33.TabIndex = 32;
             this.guna2Button33.TabStop = false;
-            this.guna2Button33.Tag = "3";
+            this.guna2Button33.Tag = "Oem5";
             this.guna2Button33.Text = "|--\\";
             this.guna2Button33.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -958,29 +959,29 @@
             this.guna2PictureBox5.TabIndex = 86;
             this.guna2PictureBox5.TabStop = false;
             // 
-            // guna2Button49
+            // btnCapsLock
             // 
-            this.guna2Button49.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button49.BorderRadius = 5;
-            this.guna2Button49.BorderThickness = 3;
-            this.guna2Button49.CheckedState.Parent = this.guna2Button49;
-            this.guna2Button49.CustomImages.Parent = this.guna2Button49;
-            this.guna2Button49.FillColor = System.Drawing.Color.MediumTurquoise;
-            this.guna2Button49.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button49.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button49.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button49.HoverState.Parent = this.guna2Button49;
-            this.guna2Button49.Location = new System.Drawing.Point(124, 115);
-            this.guna2Button49.Name = "guna2Button49";
-            this.guna2Button49.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2Button49.PressedDepth = 0;
-            this.guna2Button49.ShadowDecoration.Parent = this.guna2Button49;
-            this.guna2Button49.Size = new System.Drawing.Size(94, 50);
-            this.guna2Button49.TabIndex = 48;
-            this.guna2Button49.TabStop = false;
-            this.guna2Button49.Tag = "Capslock";
-            this.guna2Button49.Text = "CAPSLOCK";
-            this.guna2Button49.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnCapsLock.BackColor = System.Drawing.Color.Transparent;
+            this.btnCapsLock.BorderRadius = 5;
+            this.btnCapsLock.BorderThickness = 3;
+            this.btnCapsLock.CheckedState.Parent = this.btnCapsLock;
+            this.btnCapsLock.CustomImages.Parent = this.btnCapsLock;
+            this.btnCapsLock.FillColor = System.Drawing.Color.MediumTurquoise;
+            this.btnCapsLock.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCapsLock.ForeColor = System.Drawing.Color.Black;
+            this.btnCapsLock.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnCapsLock.HoverState.Parent = this.btnCapsLock;
+            this.btnCapsLock.Location = new System.Drawing.Point(124, 115);
+            this.btnCapsLock.Name = "btnCapsLock";
+            this.btnCapsLock.PressedColor = System.Drawing.Color.Transparent;
+            this.btnCapsLock.PressedDepth = 0;
+            this.btnCapsLock.ShadowDecoration.Parent = this.btnCapsLock;
+            this.btnCapsLock.Size = new System.Drawing.Size(94, 50);
+            this.btnCapsLock.TabIndex = 48;
+            this.btnCapsLock.TabStop = false;
+            this.btnCapsLock.Tag = "Capital";
+            this.btnCapsLock.Text = "CAPSLOCK";
+            this.btnCapsLock.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // guna2Button38
             // 
@@ -1002,7 +1003,7 @@
             this.guna2Button38.Size = new System.Drawing.Size(50, 50);
             this.guna2Button38.TabIndex = 37;
             this.guna2Button38.TabStop = false;
-            this.guna2Button38.Tag = "2";
+            this.guna2Button38.Tag = "A";
             this.guna2Button38.Text = "A";
             this.guna2Button38.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1026,7 +1027,7 @@
             this.guna2Button39.Size = new System.Drawing.Size(50, 50);
             this.guna2Button39.TabIndex = 38;
             this.guna2Button39.TabStop = false;
-            this.guna2Button39.Tag = "2";
+            this.guna2Button39.Tag = "S";
             this.guna2Button39.Text = "S";
             this.guna2Button39.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1050,7 +1051,7 @@
             this.guna2Button40.Size = new System.Drawing.Size(50, 50);
             this.guna2Button40.TabIndex = 39;
             this.guna2Button40.TabStop = false;
-            this.guna2Button40.Tag = "2";
+            this.guna2Button40.Tag = "D";
             this.guna2Button40.Text = "D";
             this.guna2Button40.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1074,7 +1075,7 @@
             this.guna2Button41.Size = new System.Drawing.Size(50, 50);
             this.guna2Button41.TabIndex = 40;
             this.guna2Button41.TabStop = false;
-            this.guna2Button41.Tag = "1";
+            this.guna2Button41.Tag = "F";
             this.guna2Button41.Text = "F";
             this.guna2Button41.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1098,7 +1099,7 @@
             this.guna2Button42.Size = new System.Drawing.Size(50, 50);
             this.guna2Button42.TabIndex = 41;
             this.guna2Button42.TabStop = false;
-            this.guna2Button42.Tag = "2";
+            this.guna2Button42.Tag = "G";
             this.guna2Button42.Text = "G";
             this.guna2Button42.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1122,7 +1123,7 @@
             this.guna2Button43.Size = new System.Drawing.Size(50, 50);
             this.guna2Button43.TabIndex = 42;
             this.guna2Button43.TabStop = false;
-            this.guna2Button43.Tag = "3";
+            this.guna2Button43.Tag = "H";
             this.guna2Button43.Text = "H";
             this.guna2Button43.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1146,7 +1147,7 @@
             this.guna2Button44.Size = new System.Drawing.Size(50, 50);
             this.guna2Button44.TabIndex = 43;
             this.guna2Button44.TabStop = false;
-            this.guna2Button44.Tag = "4";
+            this.guna2Button44.Tag = "J";
             this.guna2Button44.Text = "J";
             this.guna2Button44.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1170,7 +1171,7 @@
             this.guna2Button45.Size = new System.Drawing.Size(50, 50);
             this.guna2Button45.TabIndex = 44;
             this.guna2Button45.TabStop = false;
-            this.guna2Button45.Tag = "5";
+            this.guna2Button45.Tag = "K";
             this.guna2Button45.Text = "K";
             this.guna2Button45.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1194,7 +1195,7 @@
             this.guna2Button46.Size = new System.Drawing.Size(50, 50);
             this.guna2Button46.TabIndex = 45;
             this.guna2Button46.TabStop = false;
-            this.guna2Button46.Tag = "5";
+            this.guna2Button46.Tag = "L";
             this.guna2Button46.Text = "L";
             this.guna2Button46.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1218,7 +1219,7 @@
             this.guna2Button47.Size = new System.Drawing.Size(50, 50);
             this.guna2Button47.TabIndex = 46;
             this.guna2Button47.TabStop = false;
-            this.guna2Button47.Tag = "2";
+            this.guna2Button47.Tag = "OemSemicolon";
             this.guna2Button47.Text = ":--;";
             this.guna2Button47.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1242,7 +1243,7 @@
             this.guna2Button48.Size = new System.Drawing.Size(50, 50);
             this.guna2Button48.TabIndex = 47;
             this.guna2Button48.TabStop = false;
-            this.guna2Button48.Tag = "2";
+            this.guna2Button48.Tag = "OemQuotes";
             this.guna2Button48.Text = "\"--\'";
             this.guna2Button48.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1266,7 +1267,7 @@
             this.guna2Button50.Size = new System.Drawing.Size(90, 50);
             this.guna2Button50.TabIndex = 49;
             this.guna2Button50.TabStop = false;
-            this.guna2Button50.Tag = "2";
+            this.guna2Button50.Tag = "Enter";
             this.guna2Button50.Text = "ENTER";
             this.guna2Button50.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1308,7 +1309,7 @@
             this.guna2Button66.Size = new System.Drawing.Size(116, 50);
             this.guna2Button66.TabIndex = 65;
             this.guna2Button66.TabStop = false;
-            this.guna2Button66.Tag = "Shift";
+            this.guna2Button66.Tag = "ShiftKey";
             this.guna2Button66.Text = "SHIFT";
             this.guna2Button66.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1332,7 +1333,7 @@
             this.guna2Button56.Size = new System.Drawing.Size(50, 50);
             this.guna2Button56.TabIndex = 55;
             this.guna2Button56.TabStop = false;
-            this.guna2Button56.Tag = "5";
+            this.guna2Button56.Tag = "Z";
             this.guna2Button56.Text = "Z";
             this.guna2Button56.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1356,7 +1357,7 @@
             this.guna2Button57.Size = new System.Drawing.Size(50, 50);
             this.guna2Button57.TabIndex = 56;
             this.guna2Button57.TabStop = false;
-            this.guna2Button57.Tag = "2";
+            this.guna2Button57.Tag = "X";
             this.guna2Button57.Text = "X";
             this.guna2Button57.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1380,7 +1381,7 @@
             this.guna2Button58.Size = new System.Drawing.Size(50, 50);
             this.guna2Button58.TabIndex = 57;
             this.guna2Button58.TabStop = false;
-            this.guna2Button58.Tag = "2";
+            this.guna2Button58.Tag = "C";
             this.guna2Button58.Text = "C";
             this.guna2Button58.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1404,7 +1405,7 @@
             this.guna2Button59.Size = new System.Drawing.Size(50, 50);
             this.guna2Button59.TabIndex = 58;
             this.guna2Button59.TabStop = false;
-            this.guna2Button59.Tag = "2";
+            this.guna2Button59.Tag = "V";
             this.guna2Button59.Text = "V";
             this.guna2Button59.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1428,7 +1429,7 @@
             this.guna2Button60.Size = new System.Drawing.Size(50, 50);
             this.guna2Button60.TabIndex = 59;
             this.guna2Button60.TabStop = false;
-            this.guna2Button60.Tag = "2";
+            this.guna2Button60.Tag = "B";
             this.guna2Button60.Text = "B";
             this.guna2Button60.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1452,7 +1453,7 @@
             this.guna2Button61.Size = new System.Drawing.Size(50, 50);
             this.guna2Button61.TabIndex = 60;
             this.guna2Button61.TabStop = false;
-            this.guna2Button61.Tag = "1";
+            this.guna2Button61.Tag = "N";
             this.guna2Button61.Text = "N";
             this.guna2Button61.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1476,7 +1477,7 @@
             this.guna2Button62.Size = new System.Drawing.Size(50, 50);
             this.guna2Button62.TabIndex = 61;
             this.guna2Button62.TabStop = false;
-            this.guna2Button62.Tag = "2";
+            this.guna2Button62.Tag = "M";
             this.guna2Button62.Text = "M";
             this.guna2Button62.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1500,7 +1501,7 @@
             this.guna2Button63.Size = new System.Drawing.Size(50, 50);
             this.guna2Button63.TabIndex = 62;
             this.guna2Button63.TabStop = false;
-            this.guna2Button63.Tag = "3";
+            this.guna2Button63.Tag = "Oemcomma";
             this.guna2Button63.Text = "<--.";
             this.guna2Button63.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1524,7 +1525,7 @@
             this.guna2Button64.Size = new System.Drawing.Size(50, 50);
             this.guna2Button64.TabIndex = 63;
             this.guna2Button64.TabStop = false;
-            this.guna2Button64.Tag = "4";
+            this.guna2Button64.Tag = "OemPeriod";
             this.guna2Button64.Text = ">--.";
             this.guna2Button64.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1548,7 +1549,7 @@
             this.guna2Button65.Size = new System.Drawing.Size(50, 50);
             this.guna2Button65.TabIndex = 64;
             this.guna2Button65.TabStop = false;
-            this.guna2Button65.Tag = "5";
+            this.guna2Button65.Tag = "OemQuestion";
             this.guna2Button65.Text = "?--/";
             this.guna2Button65.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1572,7 +1573,7 @@
             this.guna2Button67.Size = new System.Drawing.Size(124, 50);
             this.guna2Button67.TabIndex = 66;
             this.guna2Button67.TabStop = false;
-            this.guna2Button67.Tag = "2";
+            this.guna2Button67.Tag = "ShiftKey";
             this.guna2Button67.Text = "SHIFT";
             this.guna2Button67.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1614,7 +1615,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(75, 50);
             this.guna2Button2.TabIndex = 72;
             this.guna2Button2.TabStop = false;
-            this.guna2Button2.Tag = "Ctrl";
+            this.guna2Button2.Tag = "ControlKey";
             this.guna2Button2.Text = "CTRL";
             this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1638,7 +1639,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(75, 50);
             this.guna2Button3.TabIndex = 73;
             this.guna2Button3.TabStop = false;
-            this.guna2Button3.Tag = "2";
+            this.guna2Button3.Tag = "LWin";
             this.guna2Button3.Text = "WIN";
             this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1662,7 +1663,7 @@
             this.guna2Button5.Size = new System.Drawing.Size(75, 50);
             this.guna2Button5.TabIndex = 75;
             this.guna2Button5.TabStop = false;
-            this.guna2Button5.Tag = "2";
+            this.guna2Button5.Tag = "Altkey";
             this.guna2Button5.Text = "ALT";
             this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1686,7 +1687,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(321, 50);
             this.guna2Button4.TabIndex = 74;
             this.guna2Button4.TabStop = false;
-            this.guna2Button4.Tag = "2";
+            this.guna2Button4.Tag = "Space";
             this.guna2Button4.Text = "SPACE";
             // 
             // guna2Button6
@@ -1709,7 +1710,7 @@
             this.guna2Button6.Size = new System.Drawing.Size(96, 50);
             this.guna2Button6.TabIndex = 76;
             this.guna2Button6.TabStop = false;
-            this.guna2Button6.Tag = "2";
+            this.guna2Button6.Tag = "AltKey";
             this.guna2Button6.Text = "ALT";
             this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1733,7 +1734,7 @@
             this.guna2Button7.Size = new System.Drawing.Size(134, 50);
             this.guna2Button7.TabIndex = 77;
             this.guna2Button7.TabStop = false;
-            this.guna2Button7.Tag = "1";
+            this.guna2Button7.Tag = "ControlKey";
             this.guna2Button7.Text = "CTRL";
             this.guna2Button7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -1779,33 +1780,33 @@
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.FlowLayoutPanel flp1;
-        private Guna.UI2.WinForms.Guna2Button b1;
-        private Guna.UI2.WinForms.Guna2Button b2;
-        private Guna.UI2.WinForms.Guna2Button b3;
-        private Guna.UI2.WinForms.Guna2Button b4;
-        private Guna.UI2.WinForms.Guna2Button b5;
-        private Guna.UI2.WinForms.Guna2Button b6;
-        private Guna.UI2.WinForms.Guna2Button b;
-        private Guna.UI2.WinForms.Guna2Button b8;
-        private Guna.UI2.WinForms.Guna2Button b9;
-        private Guna.UI2.WinForms.Guna2Button b0;
-        private Guna.UI2.WinForms.Guna2Button guna2Button12;
-        private Guna.UI2.WinForms.Guna2Button guna2Button13;
-        private Guna.UI2.WinForms.Guna2Button guna2Button14;
-        private Guna.UI2.WinForms.Guna2Button guna2Button15;
-        private Guna.UI2.WinForms.Guna2Button guna2Button20;
-        private Guna.UI2.WinForms.Guna2Button guna2Button21;
-        private Guna.UI2.WinForms.Guna2Button guna2Button22;
-        private Guna.UI2.WinForms.Guna2Button guna2Button23;
-        private Guna.UI2.WinForms.Guna2Button guna2Button24;
-        private Guna.UI2.WinForms.Guna2Button guna2Button25;
-        private Guna.UI2.WinForms.Guna2Button guna2Button26;
-        private Guna.UI2.WinForms.Guna2Button guna2Button27;
-        private Guna.UI2.WinForms.Guna2Button guna2Button28;
-        private Guna.UI2.WinForms.Guna2Button guna2Button29;
-        private Guna.UI2.WinForms.Guna2Button guna2Button30;
+        private Guna.UI2.WinForms.Guna2Button btn1;
+        private Guna.UI2.WinForms.Guna2Button btn2;
+        private Guna.UI2.WinForms.Guna2Button btn3;
+        private Guna.UI2.WinForms.Guna2Button btn4;
+        private Guna.UI2.WinForms.Guna2Button btn5;
+        private Guna.UI2.WinForms.Guna2Button btn6;
+        private Guna.UI2.WinForms.Guna2Button btn7;
+        private Guna.UI2.WinForms.Guna2Button btn8;
+        private Guna.UI2.WinForms.Guna2Button btn9;
+        private Guna.UI2.WinForms.Guna2Button btn0;
+        private Guna.UI2.WinForms.Guna2Button btnUnderScore;
+        private Guna.UI2.WinForms.Guna2Button btnEquall;
+        private Guna.UI2.WinForms.Guna2Button btn;
+        private Guna.UI2.WinForms.Guna2Button btnDelete;
+        private Guna.UI2.WinForms.Guna2Button btnQ;
+        private Guna.UI2.WinForms.Guna2Button btnA;
+        private Guna.UI2.WinForms.Guna2Button btnE;
+        private Guna.UI2.WinForms.Guna2Button btnR;
+        private Guna.UI2.WinForms.Guna2Button btnT;
+        private Guna.UI2.WinForms.Guna2Button btnY;
+        private Guna.UI2.WinForms.Guna2Button btnU;
+        private Guna.UI2.WinForms.Guna2Button btnI;
+        private Guna.UI2.WinForms.Guna2Button btnO;
+        private Guna.UI2.WinForms.Guna2Button btnP;
+        private Guna.UI2.WinForms.Guna2Button btnBraket1;
         private Guna.UI2.WinForms.Guna2Button guna2Button31;
-        private Guna.UI2.WinForms.Guna2Button guna2Button32;
+        private Guna.UI2.WinForms.Guna2Button btnTap;
         private Guna.UI2.WinForms.Guna2Button guna2Button33;
         private Guna.UI2.WinForms.Guna2Button guna2Button38;
         private Guna.UI2.WinForms.Guna2Button guna2Button39;
@@ -1818,7 +1819,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button46;
         private Guna.UI2.WinForms.Guna2Button guna2Button47;
         private Guna.UI2.WinForms.Guna2Button guna2Button48;
-        private Guna.UI2.WinForms.Guna2Button guna2Button49;
+        private Guna.UI2.WinForms.Guna2Button btnCapsLock;
         private Guna.UI2.WinForms.Guna2Button guna2Button50;
         private Guna.UI2.WinForms.Guna2Button guna2Button56;
         private Guna.UI2.WinForms.Guna2Button guna2Button57;

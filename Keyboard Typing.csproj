@@ -90,10 +90,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ncp5x048-removebg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ncp5x048-removebg1.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

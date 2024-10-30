@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,29 +27,61 @@ namespace Keyboard_Typing
 
         private stText text;
 
+        Dictionary<Keys, List <Guna2Button>> DicButtons = new Dictionary<Keys, List<Guna2Button>>();
+
         private struct stSettings
         {
             public Color DefaulttxtColor;
             public Color WrongtxtColor;
             public Color CorrecttxtColor;
             public Color BackgroundtxtColor;
+            public Color ClickedButtonColor;
         }
 
         private stSettings Settings;
 
-        void InitializeKeyboard()
+        void GetKeyboardButtons()
         {
-            // each keyboard buttob replace its text characters that
-            // contains "--" by new line and change its hover state color too.
+
             foreach (var item in flp1.Controls)
             {
-                if (item.GetType() == b1.GetType())
+                // Check if 'item' is a keyboard button and its tag is not null.
+                if (item is Guna2Button button && button.Tag != null)
                 {
-                    Guna2Button btn = item as Guna2Button;
-                    btn.Text = btn.Text.Replace("--", "\n");
-                    btn.HoverState.FillColor = btn.FillColor;
+                    // Convert the Tag to a Keys value if it matches
+                    if (Enum.TryParse(button.Tag.ToString(), true, out Keys key))
+                    {
+
+                        if (!DicButtons.ContainsKey(key))
+                            DicButtons[key] = new List<Guna2Button>();
+
+                        DicButtons[key].Add(button);
+
+                    }
                 }
             }
+
+        }
+
+        void EditTextKeyboardButtons()
+        {
+            // each keyboard button replace its text characters that
+            // contains "--" by new line and change its hover state color too.
+            foreach (var item in DicButtons)
+            {
+                item.Value.ForEach(btn =>
+                {
+                    btn.Text = btn.Text.Replace("--", "\n");
+                    btn.HoverState.FillColor = btn.FillColor;
+                });
+            }
+
+        }
+
+        void InitializeKeyboard()
+        {
+            GetKeyboardButtons();
+            EditTextKeyboardButtons();
         }
 
         void PreventClick(KeyEventArgs e)
@@ -70,15 +103,68 @@ namespace Keyboard_Typing
             }
         }
 
-        void KeyboardPress()
+        void ProcessKeyDown(Guna2Button btn)
         {
+            // get color of button before changing it, and save it in tag property
+            if (!(btn.Tag is Color))
+                btn.Tag = btn.FillColor;
+
+            // apply key down status settings
+            btn.FillColor = Settings.ClickedButtonColor;
+            btn.HoverState.FillColor = Settings.ClickedButtonColor;
+
+        }
+
+        void ProcessKeyUp(Guna2Button btn)
+        {
+            // check if tag contains color or not
+            if ((btn.Tag is Color))
+            {
+                // apply original button color settings
+                btn.FillColor = (Color)btn.Tag;
+                btn.HoverState.FillColor = (Color)btn.Tag;
+            }
+        }
+
+        void KeyboardPress(KeyEventArgs Key, bool IsKeyDown)
+        {
+            // Apply settings on the pressed button,
+            // according to key down or key up status.
+            foreach (var item in DicButtons)
+            {
+                // find keyboard button pressed
+                if (Key.KeyCode == item.Key)
+                {
+                    foreach (var btn in item.Value)
+                    {
+                        if (IsKeyDown)
+                            ProcessKeyDown(btn); // apply key down status
+                        else
+                            ProcessKeyUp(btn);  // apply key up status
+                    }
+                    break; // stop searching after apply settings.
+                }
+            }
+
+        }
+
+        void RestoreKeyboardButtonsStatus()
+        {
+
+            // Restore default settings for all buttons.
+            foreach (var item in DicButtons)
+            {
+                foreach (var btn in item.Value)
+                    ProcessKeyUp(btn);
+            }
 
         }
 
         private void StopTyping()
         {
-            rtxtInput.Enabled = false;
-            rtxtOutput.Enabled = false;
+            RestoreKeyboardButtonsStatus(); // Restore default settings for all buttons.
+            rtxtInput.Enabled = false; // stop enter more characters.
+            rtxtOutput.Enabled = false; // to ignore typing in 'rtxtoutput'.
         }
 
         void ChangeCharProperties(int ind, int range, Color color, FontStyle fontStyle = FontStyle.Regular)
@@ -151,17 +237,24 @@ namespace Keyboard_Typing
             Settings.WrongtxtColor = Color.Red;
             Settings.CorrecttxtColor = Color.Green;
             Settings.BackgroundtxtColor = Color.Yellow;
+            Settings.ClickedButtonColor = Color.Blue;
             InitializeKeyboard();
         }
 
         private void rtxtInput_KeyDown(object sender, KeyEventArgs e)
         {
             PreventClick(e);
+            KeyboardPress(e, true);
+        }
+        private void rtxtInput_KeyUp(object sender, KeyEventArgs e)
+        {
+            KeyboardPress(e, false);
         }
 
         private void rtxtOutput_Click(object sender, EventArgs e)
         {
             rtxtInput.Focus();
         }
+
     }
 }

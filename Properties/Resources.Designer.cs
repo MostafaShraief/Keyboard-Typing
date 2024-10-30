@@ -59,25 +59,5 @@ namespace Keyboard_Typing.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ncp5x048_removebg {
-            get {
-                object obj = ResourceManager.GetObject("ncp5x048-removebg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ncp5x048_removebg1 {
-            get {
-                object obj = ResourceManager.GetObject("ncp5x048-removebg1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
