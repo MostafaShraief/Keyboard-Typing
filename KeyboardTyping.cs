@@ -1,10 +1,12 @@
 ﻿using Guna.UI2.WinForms;
+using Keyboard_Typing.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,21 +29,46 @@ namespace Keyboard_Typing
 
         private stText text;
 
-        Dictionary<Keys, List <Guna2Button>> DicButtons = new Dictionary<Keys, List<Guna2Button>>();
+        Dictionary<Keys, List <Guna2Button>> DicButtons;
 
         private struct stSettings
         {
             public Color DefaulttxtColor;
             public Color WrongtxtColor;
             public Color CorrecttxtColor;
-            public Color BackgroundtxtColor;
+            public Color DefaultBackgroundtxtColor;
+            public Color CorrectBackgroundtxtColor;
+            public Color WrongBackgroundtxtColor;
             public Color ClickedButtonColor;
         }
 
         private stSettings Settings;
 
+        void ChooseRandomStory()
+        {
+
+            // Retrieve all stories from resources.
+            List<string> stories = new List<string>
+            {
+                Resources.The_Black_Cat,
+                Resources.The_Chapel,
+                Resources.Haircut,
+                Resources.A_Coward,
+                Resources.The_Metro
+            };
+
+            Random rdm = new Random();
+
+            rtxtOutput.Text = stories[rdm.Next(stories.Count)];
+
+            stories.Clear();
+
+        }
+
         void GetKeyboardButtons()
         {
+
+            DicButtons = new Dictionary<Keys, List<Guna2Button>>();
 
             foreach (var item in flp1.Controls)
             {
@@ -167,78 +194,113 @@ namespace Keyboard_Typing
             rtxtOutput.Enabled = false; // to ignore typing in 'rtxtoutput'.
         }
 
-        void ChangeCharProperties(int ind, int range, Color color, FontStyle fontStyle = FontStyle.Regular)
+        void ChangeCharProperties(int ind, int range, Color forecolor, Color backgroundcolor, FontStyle fontStyle = FontStyle.Regular)
         {
-
             // select correspond character
             rtxtOutput.Select(ind, range);
             // change its color
-            rtxtOutput.SelectionColor = color;
+            rtxtOutput.SelectionColor = forecolor;
             // change background color
-            if (color != Settings.DefaulttxtColor)
-                rtxtOutput.SelectionBackColor = Settings.BackgroundtxtColor;
-            else
-                rtxtOutput.SelectionBackColor = Color.Transparent;
+            rtxtOutput.SelectionBackColor = backgroundcolor;
             // change font style
             rtxtOutput.SelectionFont = new Font(rtxtOutput.SelectionFont, fontStyle);
+        }
 
+        void HighlightCharacters()
+        {
+            // check last character.
+            if (text.Input.Length <= text.Output.Length && text.Input.Length > 0)
+            {
+                int pos = text.Input.Length - 1;
+
+                if (text.Input[pos] == text.Output[pos])
+                {
+                    ChangeCharProperties(pos, 1, Settings.CorrecttxtColor, Settings.CorrectBackgroundtxtColor);
+                }
+                else
+                {
+                    ChangeCharProperties(pos, 1, Settings.WrongtxtColor, Settings.WrongBackgroundtxtColor);
+                }
+            }
+        }
+
+        void UnderlineNext()
+        {
+            // Underline where to type.
+            if (text.Input.Length < text.Output.Length)
+            {
+                ChangeCharProperties(text.Input.Length, 1, Settings.DefaulttxtColor, Settings.DefaultBackgroundtxtColor, FontStyle.Underline);
+            }
+        }
+
+        void RemoveUnderline()
+        {
+            // This to disable underline style to ignore remove characters.
+            if (text.Input.Length < text.Output.Length - 1)
+            {
+                ChangeCharProperties(text.Input.Length + 1, 1, Settings.DefaulttxtColor, Settings.DefaultBackgroundtxtColor);
+            }
         }
 
         bool CheckingText()
         {
-            // Check the entered character if match and change its color.
+            // Check Completed text length.
+            return (text.Input.Length == text.Output.Length);
+        }
 
+        void UpdateCharactersFormatting()
+        {
+            // Get Input text.
             text.Input = rtxtInput.Text;
             text.Output = rtxtOutput.Text;
 
-            // iterate each character from end to start, and leave if there are new line.
-            if (text.Input.Length <= text.Output.Length)
+            // Formatting.
+            HighlightCharacters();
+            UnderlineNext();
+            RemoveUnderline();
+        }
+
+        void UpdateScroll()
+        {
+            if (text.Input.Length > 1)
             {
-                for (int i = text.Input.Length - 1; i >= 0; --i)
+                char underlinedchar = text.Output[text.Input.Length - 2];
+                // Scroll 'rtxtOutput' to current underlined character.
+                if (underlinedchar == '\n' || underlinedchar == ' ')
                 {
-
-                    if (text.Input[i] == text.Output[i])
-                    {
-                        ChangeCharProperties(i, 1, Settings.CorrecttxtColor);
-                    }
-                    else
-                    {
-                        ChangeCharProperties(i, 1, Settings.WrongtxtColor);
-                    }
-
-                    if (text.Output[i] == '\n')
-                        break;
-
+                    rtxtOutput.SelectionStart = text.Input.Length;
+                    rtxtOutput.ScrollToCaret();
                 }
             }
-
-            // This important if the key pressed is delete key.
-            if (text.Input.Length < text.Output.Length)
-            ChangeCharProperties(text.Input.Length, 1, Settings.DefaulttxtColor, FontStyle.Underline);
-
-            // This to disable underline style to ignore remove characters.
-            if (text.Input.Length < text.Output.Length - 1)
-                ChangeCharProperties(text.Input.Length + 1, 1, Settings.DefaulttxtColor);
-
-            return (text.Input.Length == text.Output.Length);
-
         }
 
         private void rtxtInput_TextChanged(object sender, EventArgs e)
         {
-            // Check Completed text length and stop if true.
-            if (CheckingText())
+            // Format shown text (1.Correct & Uncorrect Chraracters, 2.UnderLine Next, 3.Remove Previous UnderLine).
+            UpdateCharactersFormatting();
+            // Scroll 'rtxtOutput' to current line
+            UpdateScroll();
+
+            if (CheckingText()) // Check Completed text length and stop if true.
                 StopTyping();
         }
 
-        private void KeyboardTyping_Load(object sender, EventArgs e)
+        private void DefaultSettings()
         {
             Settings.DefaulttxtColor = Color.Black;
             Settings.WrongtxtColor = Color.Red;
             Settings.CorrecttxtColor = Color.Green;
-            Settings.BackgroundtxtColor = Color.Yellow;
+            Settings.DefaultBackgroundtxtColor = Color.Transparent;
+            Settings.CorrectBackgroundtxtColor = Color.Yellow;
+            Settings.WrongBackgroundtxtColor = Color.Orange;
             Settings.ClickedButtonColor = Color.Blue;
+        }
+
+        private void KeyboardTyping_Load(object sender, EventArgs e)
+        {
+            DefaultSettings();
             InitializeKeyboard();
+            ChooseRandomStory();
         }
 
         private void rtxtInput_KeyDown(object sender, KeyEventArgs e)
@@ -246,6 +308,7 @@ namespace Keyboard_Typing
             PreventClick(e);
             KeyboardPress(e, true);
         }
+
         private void rtxtInput_KeyUp(object sender, KeyEventArgs e)
         {
             KeyboardPress(e, false);
@@ -256,5 +319,11 @@ namespace Keyboard_Typing
             rtxtInput.Focus();
         }
 
+        private void rtxtOutput_TextChanged(object sender, EventArgs e)
+        {
+            // Get Output text.
+            text.Output = rtxtOutput.Text;
+        }
+        
     }
 }

@@ -59,5 +59,60 @@ namespace Keyboard_Typing.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An orphan, and possessed of an adequate income, he cut a dash, as the saying is. He had a good figure and a good carriage, a sufficient flow of words to pass for wit, a certain natural grace, an air of nobility and pride, a gallant moustache and an eloquent eye, attributes which women like.
+        ///
+        ///He was in demand in drawing-rooms, sought after for valses, and in men he inspired that smiling hostility which is reserved for vital and attractive rivals. He had been suspected of several love-affairs of a sort calc [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string A_Coward {
+            get {
+                return ResourceManager.GetString("A Coward", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I got another barber that comes over from Carterville and helps me out Saturdays, but the rest of the time I can get along all right alone. You can see for yourself that this ain&apos;t no New York: City and besides that, the most of the boys works all day and don&apos;t have no leisure to drop in here and get themselves prettied up.
+        ///
+        ///You&apos;re a newcomer, ain&apos;t you? I thought I hadn&apos;t seen you round before. I hope you like it good enough to stay. As I say, we ain&apos;t no New York City or Chicago, but we have pretty good [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Haircut {
+            get {
+                return ResourceManager.GetString("Haircut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For the most wild, yet most homely narrative which I am about to pen, I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence. Yet, mad am I not - and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul. My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events. In their consequences, these events have terrified - have tortured - hav [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string The_Black_Cat {
+            get {
+                return ResourceManager.GetString("The Black Cat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to palmtree
+        ///She was walking lazily, for the fierce April sun was directly overhead. Her umbrella blocked its rays but nothing blocked the heat - the sort of raw, wild heat that crushes you with its energy. A few buffalo were tethered under coconuts, browsing the parched verges. Occasionally a car went past, leaving its treads in the melting pitch like the wake of a ship at sea. Otherwise it was quiet, and she saw no-one.
+        ///
+        ///In her long white Sunday dress you might have taken Ginnie Narine for fourteen or fift [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string The_Chapel {
+            get {
+                return ResourceManager.GetString("The Chapel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The discovery of a body in the Paris Metro early one morning was not particularly unusual. That it was headless sent a frisson through the sixth arrondissement, but the incident went unnoticed outside Paris.
+        ///
+        ///voodoo symbol
+        ///Yet there was clearly something strange about the case. It was hardly as though the body had been decapitated to frustrate identification, for it was fully clothed and none of the owner’s personal effects had been removed, save of course for his head. The Paris police soon tied up the  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string The_Metro {
+            get {
+                return ResourceManager.GetString("The Metro", resourceCulture);
+            }
+        }
     }
 }

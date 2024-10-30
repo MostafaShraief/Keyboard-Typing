@@ -142,19 +142,24 @@
             // 
             // rtxtOutput
             // 
+            this.rtxtOutput.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.rtxtOutput.DetectUrls = false;
             this.rtxtOutput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rtxtOutput.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtOutput.Location = new System.Drawing.Point(0, 0);
             this.rtxtOutput.Name = "rtxtOutput";
+            this.rtxtOutput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rtxtOutput.Size = new System.Drawing.Size(1062, 364);
             this.rtxtOutput.TabIndex = 2;
             this.rtxtOutput.TabStop = false;
-            this.rtxtOutput.Text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            this.rtxtOutput.Text = "text";
             this.rtxtOutput.Click += new System.EventHandler(this.rtxtOutput_Click);
+            this.rtxtOutput.TextChanged += new System.EventHandler(this.rtxtOutput_TextChanged);
             this.rtxtOutput.Enter += new System.EventHandler(this.rtxtOutput_Click);
             // 
             // rtxtInput
             // 
+            this.rtxtInput.AcceptsTab = true;
             this.rtxtInput.Font = new System.Drawing.Font("Tahoma", 19.8F);
             this.rtxtInput.Location = new System.Drawing.Point(267, 269);
             this.rtxtInput.Name = "rtxtInput";
