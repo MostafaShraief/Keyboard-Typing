@@ -36,13 +36,13 @@
             this.btnTypingTest = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btnDownWords = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btnSettings = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.pnlStatus = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnlBottomRibbon = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.pnlRibbon = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pnlMain = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.pnlStatus = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.scMain)).BeginInit();
             this.scMain.Panel1.SuspendLayout();
             this.scMain.SuspendLayout();
@@ -68,6 +68,7 @@
             this.scMain.Panel1.Controls.Add(this.scSubLeft);
             this.scMain.Size = new System.Drawing.Size(1374, 658);
             this.scMain.SplitterDistance = 315;
+            this.scMain.SplitterWidth = 1;
             this.scMain.TabIndex = 0;
             // 
             // scSubLeft
@@ -94,10 +95,10 @@
             this.guna2CustomGradientPanel1.BackColor = System.Drawing.Color.MediumBlue;
             this.guna2CustomGradientPanel1.Controls.Add(this.flpOptions);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.Black;
-            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.Black;
+            this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.MediumBlue;
+            this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.MediumBlue;
+            this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.MediumBlue;
+            this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.MediumBlue;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
             this.guna2CustomGradientPanel1.Quality = 1;
@@ -121,6 +122,7 @@
             // 
             this.btnTypingTest.Animated = true;
             this.btnTypingTest.BorderRadius = 5;
+            this.btnTypingTest.BorderThickness = 3;
             this.btnTypingTest.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnTypingTest.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnTypingTest.CheckedState.Parent = this.btnTypingTest;
@@ -133,6 +135,9 @@
             this.btnTypingTest.HoverState.Parent = this.btnTypingTest;
             this.btnTypingTest.Location = new System.Drawing.Point(3, 3);
             this.btnTypingTest.Name = "btnTypingTest";
+            this.btnTypingTest.ShadowDecoration.BorderRadius = 0;
+            this.btnTypingTest.ShadowDecoration.Depth = 1;
+            this.btnTypingTest.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnTypingTest.ShadowDecoration.Parent = this.btnTypingTest;
             this.btnTypingTest.Size = new System.Drawing.Size(99, 99);
             this.btnTypingTest.TabIndex = 0;
@@ -142,6 +147,7 @@
             // 
             this.btnDownWords.Animated = true;
             this.btnDownWords.BorderRadius = 5;
+            this.btnDownWords.BorderThickness = 3;
             this.btnDownWords.CheckedState.Parent = this.btnDownWords;
             this.btnDownWords.CustomImages.Parent = this.btnDownWords;
             this.btnDownWords.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -160,6 +166,7 @@
             // 
             this.btnSettings.Animated = true;
             this.btnSettings.BorderRadius = 5;
+            this.btnSettings.BorderThickness = 3;
             this.btnSettings.CheckedState.Parent = this.btnSettings;
             this.btnSettings.CustomImages.Parent = this.btnSettings;
             this.btnSettings.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
@@ -173,6 +180,15 @@
             this.btnSettings.Size = new System.Drawing.Size(99, 99);
             this.btnSettings.TabIndex = 2;
             this.btnSettings.Text = "Settings";
+            // 
+            // pnlStatus
+            // 
+            this.pnlStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlStatus.Location = new System.Drawing.Point(0, 0);
+            this.pnlStatus.Name = "pnlStatus";
+            this.pnlStatus.ShadowDecoration.Parent = this.pnlStatus;
+            this.pnlStatus.Size = new System.Drawing.Size(315, 549);
+            this.pnlStatus.TabIndex = 0;
             // 
             // guna2Elipse1
             // 
@@ -208,29 +224,6 @@
             this.pnlRibbon.Size = new System.Drawing.Size(1374, 37);
             this.pnlRibbon.TabIndex = 3;
             // 
-            // pnlMain
-            // 
-            this.pnlMain.Controls.Add(this.scMain);
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlMain.Location = new System.Drawing.Point(0, 37);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.ShadowDecoration.Parent = this.pnlMain;
-            this.pnlMain.Size = new System.Drawing.Size(1374, 658);
-            this.pnlMain.TabIndex = 4;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = null;
-            // 
-            // pnlStatus
-            // 
-            this.pnlStatus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlStatus.Location = new System.Drawing.Point(0, 0);
-            this.pnlStatus.Name = "pnlStatus";
-            this.pnlStatus.ShadowDecoration.Parent = this.pnlStatus;
-            this.pnlStatus.Size = new System.Drawing.Size(315, 549);
-            this.pnlStatus.TabIndex = 0;
-            // 
             // btnClose
             // 
             this.btnClose.Animated = true;
@@ -251,6 +244,20 @@
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "X";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.Controls.Add(this.scMain);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMain.Location = new System.Drawing.Point(0, 37);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.ShadowDecoration.Parent = this.pnlMain;
+            this.pnlMain.Size = new System.Drawing.Size(1374, 658);
+            this.pnlMain.TabIndex = 4;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.TargetControl = this.pnlRibbon;
             // 
             // MainForm
             // 

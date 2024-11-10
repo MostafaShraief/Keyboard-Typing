@@ -144,6 +144,8 @@
             // 
             // rtxtOutput
             // 
+            this.rtxtOutput.BackColor = System.Drawing.Color.White;
+            this.rtxtOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtxtOutput.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.rtxtOutput.DetectUrls = false;
             this.rtxtOutput.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -174,6 +176,7 @@
             // 
             // flp1
             // 
+            this.flp1.BackColor = System.Drawing.Color.White;
             this.flp1.Controls.Add(this.guna2PictureBox2);
             this.flp1.Controls.Add(this.btn);
             this.flp1.Controls.Add(this.btn1);
