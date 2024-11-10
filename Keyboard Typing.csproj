@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CodeeloUI">
+      <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\CodeeloUI.1.1.1\lib\net48\CodeeloUI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
@@ -40,9 +43,13 @@
     <Reference Include="ReaLTaiizor">
       <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\ReaLTaiizor.3.8.0.7\lib\net48\ReaLTaiizor.dll</HintPath>
     </Reference>
+    <Reference Include="SipaaFramework">
+      <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\SipaaFramework.1.1.0\lib\net46\SipaaFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,10 +68,19 @@
     <Compile Include="KeyboardTyping.Designer.cs">
       <DependentUpon>KeyboardTyping.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="KeyboardTyping.resx">
       <DependentUpon>KeyboardTyping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Status Panel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

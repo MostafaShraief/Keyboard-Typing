@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.components = new System.ComponentModel.Container();
+            this.scKeyboardTyping = new System.Windows.Forms.SplitContainer();
             this.rtxtOutput = new System.Windows.Forms.RichTextBox();
             this.rtxtInput = new System.Windows.Forms.RichTextBox();
             this.flp1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -101,10 +102,11 @@
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.scKeyboardTyping)).BeginInit();
+            this.scKeyboardTyping.Panel1.SuspendLayout();
+            this.scKeyboardTyping.Panel2.SuspendLayout();
+            this.scKeyboardTyping.SuspendLayout();
             this.flp1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -118,27 +120,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
-            // splitContainer1
+            // scKeyboardTyping
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.scKeyboardTyping.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scKeyboardTyping.Location = new System.Drawing.Point(0, 0);
+            this.scKeyboardTyping.Name = "scKeyboardTyping";
+            this.scKeyboardTyping.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // splitContainer1.Panel1
+            // scKeyboardTyping.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.rtxtOutput);
-            this.splitContainer1.Panel1.Controls.Add(this.rtxtInput);
-            this.splitContainer1.Panel1MinSize = 300;
+            this.scKeyboardTyping.Panel1.Controls.Add(this.rtxtOutput);
+            this.scKeyboardTyping.Panel1.Controls.Add(this.rtxtInput);
+            this.scKeyboardTyping.Panel1MinSize = 300;
             // 
-            // splitContainer1.Panel2
+            // scKeyboardTyping.Panel2
             // 
-            this.splitContainer1.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.splitContainer1.Panel2.Controls.Add(this.flp1);
-            this.splitContainer1.Size = new System.Drawing.Size(1062, 653);
-            this.splitContainer1.SplitterDistance = 364;
-            this.splitContainer1.TabIndex = 0;
-            this.splitContainer1.TabStop = false;
+            this.scKeyboardTyping.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.scKeyboardTyping.Panel2.Controls.Add(this.flp1);
+            this.scKeyboardTyping.Size = new System.Drawing.Size(1059, 653);
+            this.scKeyboardTyping.SplitterDistance = 368;
+            this.scKeyboardTyping.TabIndex = 0;
+            this.scKeyboardTyping.TabStop = false;
             // 
             // rtxtOutput
             // 
@@ -149,7 +151,7 @@
             this.rtxtOutput.Location = new System.Drawing.Point(0, 0);
             this.rtxtOutput.Name = "rtxtOutput";
             this.rtxtOutput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.rtxtOutput.Size = new System.Drawing.Size(1062, 364);
+            this.rtxtOutput.Size = new System.Drawing.Size(1059, 368);
             this.rtxtOutput.TabIndex = 2;
             this.rtxtOutput.TabStop = false;
             this.rtxtOutput.Text = "text";
@@ -244,7 +246,7 @@
             this.flp1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flp1.Location = new System.Drawing.Point(0, 0);
             this.flp1.Name = "flp1";
-            this.flp1.Size = new System.Drawing.Size(1062, 285);
+            this.flp1.Size = new System.Drawing.Size(1059, 281);
             this.flp1.TabIndex = 0;
             // 
             // guna2PictureBox2
@@ -1752,20 +1754,25 @@
             this.guna2PictureBox10.TabIndex = 91;
             this.guna2PictureBox10.TabStop = false;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 50;
+            // 
             // KeyboardTyping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 653);
-            this.Controls.Add(this.splitContainer1);
+            this.ClientSize = new System.Drawing.Size(1059, 653);
+            this.Controls.Add(this.scKeyboardTyping);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(100, 47);
             this.Name = "KeyboardTyping";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.KeyboardTyping_Load);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.scKeyboardTyping.Panel1.ResumeLayout(false);
+            this.scKeyboardTyping.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.scKeyboardTyping)).EndInit();
+            this.scKeyboardTyping.ResumeLayout(false);
             this.flp1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -1783,7 +1790,7 @@
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer scKeyboardTyping;
         private System.Windows.Forms.FlowLayoutPanel flp1;
         private Guna.UI2.WinForms.Guna2Button btn1;
         private Guna.UI2.WinForms.Guna2Button btn2;
@@ -1856,6 +1863,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
         private System.Windows.Forms.RichTextBox rtxtInput;
         private System.Windows.Forms.RichTextBox rtxtOutput;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
 

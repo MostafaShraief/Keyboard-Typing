@@ -31,6 +31,8 @@ namespace Keyboard_Typing
 
         Dictionary<Keys, List <Guna2Button>> DicButtons;
 
+        Dictionary<string,  List <Guna2Button>> KeyboardButtonsColorGroups;
+
         private struct stSettings
         {
             public Color DefaulttxtColor;
