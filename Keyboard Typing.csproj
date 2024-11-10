@@ -39,6 +39,9 @@
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\Metro UI\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="ReaLTaiizor">
       <HintPath>C:\Users\MOSTAFA\Documents\Packages for WinForms\ReaLTaiizor.3.8.0.7\lib\net48\ReaLTaiizor.dll</HintPath>
@@ -76,6 +79,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status Panel\TypingSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status Panel\TypingSettings.Designer.cs">
+      <DependentUpon>TypingSettings.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="KeyboardTyping.resx">
       <DependentUpon>KeyboardTyping.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +101,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Status Panel\TypingSettings.resx">
+      <DependentUpon>TypingSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,7 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Status Panel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

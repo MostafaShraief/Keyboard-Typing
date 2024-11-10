@@ -32,6 +32,7 @@
             this.scKeyboardTyping = new System.Windows.Forms.SplitContainer();
             this.rtxtOutput = new System.Windows.Forms.RichTextBox();
             this.rtxtInput = new System.Windows.Forms.RichTextBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.flp1 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btn = new Guna.UI2.WinForms.Guna2Button();
@@ -122,6 +123,7 @@
             // 
             // scKeyboardTyping
             // 
+            this.scKeyboardTyping.BackColor = System.Drawing.Color.White;
             this.scKeyboardTyping.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scKeyboardTyping.Location = new System.Drawing.Point(0, 0);
             this.scKeyboardTyping.Name = "scKeyboardTyping";
@@ -131,6 +133,7 @@
             // 
             this.scKeyboardTyping.Panel1.Controls.Add(this.rtxtOutput);
             this.scKeyboardTyping.Panel1.Controls.Add(this.rtxtInput);
+            this.scKeyboardTyping.Panel1.Controls.Add(this.guna2Panel1);
             this.scKeyboardTyping.Panel1MinSize = 300;
             // 
             // scKeyboardTyping.Panel2
@@ -148,12 +151,12 @@
             this.rtxtOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtxtOutput.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.rtxtOutput.DetectUrls = false;
-            this.rtxtOutput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtxtOutput.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtOutput.Location = new System.Drawing.Point(0, 0);
+            this.rtxtOutput.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.rtxtOutput.Font = new System.Drawing.Font("Tahoma", 20.2F);
+            this.rtxtOutput.Location = new System.Drawing.Point(0, 34);
             this.rtxtOutput.Name = "rtxtOutput";
             this.rtxtOutput.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.rtxtOutput.Size = new System.Drawing.Size(1059, 368);
+            this.rtxtOutput.Size = new System.Drawing.Size(1059, 334);
             this.rtxtOutput.TabIndex = 2;
             this.rtxtOutput.TabStop = false;
             this.rtxtOutput.Text = "text";
@@ -173,6 +176,16 @@
             this.rtxtInput.TextChanged += new System.EventHandler(this.rtxtInput_TextChanged);
             this.rtxtInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtxtInput_KeyDown);
             this.rtxtInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.rtxtInput_KeyUp);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(1059, 47);
+            this.guna2Panel1.TabIndex = 3;
             // 
             // flp1
             // 
@@ -1760,6 +1773,7 @@
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 50;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // KeyboardTyping
             // 
@@ -1867,6 +1881,7 @@
         private System.Windows.Forms.RichTextBox rtxtInput;
         private System.Windows.Forms.RichTextBox rtxtOutput;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
 
