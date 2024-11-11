@@ -253,8 +253,9 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Nirmala UI", 20F, System.Drawing.FontStyle.Bold);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.YellowGreen;
-            this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.YellowGreen;
+            this.guna2GradientButton1.HoverState.FillColor = System.Drawing.Color.Yellow;
+            this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.Yellow;
+            this.guna2GradientButton1.HoverState.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.Location = new System.Drawing.Point(1240, -2);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
@@ -278,6 +279,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnClose.HoverState.FillColor2 = System.Drawing.Color.Red;
+            this.btnClose.HoverState.ForeColor = System.Drawing.Color.Black;
             this.btnClose.HoverState.Parent = this.btnClose;
             this.btnClose.Location = new System.Drawing.Point(1310, 0);
             this.btnClose.Name = "btnClose";
@@ -306,6 +308,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1374, 707);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlRibbon);

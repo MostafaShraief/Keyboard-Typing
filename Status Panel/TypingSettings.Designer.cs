@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbTime = new Guna.UI2.WinForms.Guna2TrackBar();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnDownWords = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.gbTypingMode.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +69,8 @@
             this.gbTypingMode.ColorLighting = System.Drawing.Color.Black;
             this.gbTypingMode.ColorPen_1 = System.Drawing.Color.Empty;
             this.gbTypingMode.ColorPen_2 = System.Drawing.Color.Empty;
+            this.gbTypingMode.Controls.Add(this.label3);
+            this.gbTypingMode.Controls.Add(this.btnDownWords);
             this.gbTypingMode.Controls.Add(this.lblTimeValue);
             this.gbTypingMode.Controls.Add(this.label1);
             this.gbTypingMode.Controls.Add(this.tbTime);
@@ -143,6 +147,40 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Time";
             // 
+            // btnDownWords
+            // 
+            this.btnDownWords.Animated = true;
+            this.btnDownWords.BorderRadius = 30;
+            this.btnDownWords.BorderThickness = 3;
+            this.btnDownWords.CheckedState.Parent = this.btnDownWords;
+            this.btnDownWords.CustomImages.Parent = this.btnDownWords;
+            this.btnDownWords.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDownWords.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnDownWords.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold);
+            this.btnDownWords.ForeColor = System.Drawing.Color.Black;
+            this.btnDownWords.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnDownWords.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnDownWords.HoverState.Font = new System.Drawing.Font("Nirmala UI", 20.8F, System.Drawing.FontStyle.Bold);
+            this.btnDownWords.HoverState.Parent = this.btnDownWords;
+            this.btnDownWords.Location = new System.Drawing.Point(30, 412);
+            this.btnDownWords.Name = "btnDownWords";
+            this.btnDownWords.ShadowDecoration.Parent = this.btnDownWords;
+            this.btnDownWords.Size = new System.Drawing.Size(243, 99);
+            this.btnDownWords.TabIndex = 5;
+            this.btnDownWords.Text = "Start";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.label3.Location = new System.Drawing.Point(111, 115);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 32);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Per Minute";
+            // 
             // TypingSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -167,5 +205,7 @@
         private System.Windows.Forms.Label lblTimeValue;
         private System.Windows.Forms.Label label2;
         private ReaLTaiizor.Controls.CyberGroupBox gbTypingMode;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnDownWords;
+        private System.Windows.Forms.Label label3;
     }
 }
