@@ -1,8 +1,10 @@
-﻿using Keyboard_Typing.Status_Panel;
+﻿using Keyboard_Typing.Right_Panel;
+using Keyboard_Typing.Status_Panel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,8 @@ namespace Keyboard_Typing
 {
     public partial class MainForm : Form
     {
+        internal int Minutes;
+
         public MainForm()
         {
             InitializeComponent();
@@ -22,11 +26,15 @@ namespace Keyboard_Typing
         {
             if (panel.Controls.Count > 0)
                 panel.Controls.Clear();
-                
-            form.Dock = DockStyle.Fill;
-            form.TopLevel = false;
-            panel.Controls.Add(form);
-            form.Show();
+
+            panel.Enabled = true;
+            if (form != null)
+            {
+                form.Dock = DockStyle.Fill;
+                form.TopLevel = false;
+                panel.Controls.Add(form);
+                form.Show();
+            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -60,12 +68,35 @@ namespace Keyboard_Typing
             }
         }
 
-        private void btnTypingTest_Click(object sender, EventArgs e)
+        internal void TakeTypingTest()
         {
-            // Load Keyboard.
-            LoadForm(new KeyboardTyping(), scMain.Panel2);
             // Load Mode Settings.
             LoadForm(new TypingSettings(), pnlStatus);
+            // Clear right panel controls.
+            LoadForm(new MainMenuScreen(), scMain.Panel2);
+        }
+
+        internal void TypingTestButton(object sender, EventArgs e)
+        {
+            TakeTypingTest();
+        }
+
+        internal void StartKeyboardTyping(int minutes)
+        {
+            Minutes = minutes;
+            // Load 'KeyboardTyping' form.
+            LoadForm(new KeyboardTyping(), scMain.Panel2);
+            // Load 'TypingRoundStatus' form.
+            LoadForm(new TypingRoundStatus(), pnlStatus);
+        }
+
+        internal void ShowKeyboardTypingResult(int WPN)
+        {
+            // Stop typing by disable the right panel.
+            scMain.Panel2.Enabled = false;
+
+            // Load 'TypingRounfResult' form.
+            LoadForm(new TypingRounfResult(), pnlStatus);
         }
     }
 }

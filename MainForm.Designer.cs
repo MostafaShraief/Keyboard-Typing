@@ -37,9 +37,9 @@
             this.btnDownWords = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btnSettings = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.pnlStatus = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.ElipseMainForm = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnlMain = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.dcMainForm = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.pnlRibbon = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -150,7 +150,7 @@
             this.btnTypingTest.Size = new System.Drawing.Size(99, 99);
             this.btnTypingTest.TabIndex = 0;
             this.btnTypingTest.Text = "Typing Test";
-            this.btnTypingTest.Click += new System.EventHandler(this.btnTypingTest_Click);
+            this.btnTypingTest.Click += new System.EventHandler(this.TypingTestButton);
             // 
             // btnDownWords
             // 
@@ -206,10 +206,10 @@
             this.pnlStatus.Size = new System.Drawing.Size(315, 552);
             this.pnlStatus.TabIndex = 0;
             // 
-            // guna2Elipse1
+            // ElipseMainForm
             // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
+            this.ElipseMainForm.BorderRadius = 30;
+            this.ElipseMainForm.TargetControl = this;
             // 
             // pnlMain
             // 
@@ -222,9 +222,9 @@
             this.pnlMain.Size = new System.Drawing.Size(1374, 658);
             this.pnlMain.TabIndex = 4;
             // 
-            // guna2DragControl1
+            // dcMainForm
             // 
-            this.guna2DragControl1.TargetControl = this.pnlRibbon;
+            this.dcMainForm.TargetControl = this.pnlRibbon;
             // 
             // pnlRibbon
             // 
@@ -336,10 +336,10 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer scMain;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse ElipseMainForm;
         private System.Windows.Forms.SplitContainer scSubLeft;
         private Guna.UI2.WinForms.Guna2Panel pnlMain;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl dcMainForm;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlStatus;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;

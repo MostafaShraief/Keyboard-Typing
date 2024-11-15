@@ -72,6 +72,16 @@ namespace Keyboard_Typing.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap github {
+            get {
+                object obj = ResourceManager.GetObject("github", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to I got another barber that comes over from Carterville and helps me out Saturdays, but the rest of the time I can get along all right alone. You can see for yourself that this ain&apos;t no New York: City and besides that, the most of the boys works all day and don&apos;t have no leisure to drop in here and get themselves prettied up.
         ///
         ///You&apos;re a newcomer, ain&apos;t you? I thought I hadn&apos;t seen you round before. I hope you like it good enough to stay. As I say, we ain&apos;t no New York City or Chicago, but we have pretty good [rest of string was truncated]&quot;;.
@@ -79,6 +89,26 @@ namespace Keyboard_Typing.Properties {
         internal static string Haircut {
             get {
                 return ResourceManager.GetString("Haircut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap linkedin {
+            get {
+                object obj = ResourceManager.GetObject("linkedin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap telegram {
+            get {
+                object obj = ResourceManager.GetObject("telegram", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

@@ -21,5 +21,10 @@ namespace Keyboard_Typing.Status_Panel
         {
             lblTimeValue.Text = tbTime.Value.ToString();
         }
+
+        private void btnDownWords_Click(object sender, EventArgs e)
+        {
+            Program.mainformobject.StartKeyboardTyping(tbTime.Value);
+        }
     }
 }

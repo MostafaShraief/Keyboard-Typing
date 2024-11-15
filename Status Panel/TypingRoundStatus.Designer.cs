@@ -1,6 +1,6 @@
 ﻿namespace Keyboard_Typing.Status_Panel
 {
-    partial class TypingSettings
+    partial class TypingRoundStatus
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.gbTypingMode = new ReaLTaiizor.Controls.CyberGroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnDownWords = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.lblTimeValue = new System.Windows.Forms.Label();
+            this.btnFinsihTyping = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tbTime = new Guna.UI2.WinForms.Guna2TrackBar();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblTimeLeft = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.gbTypingMode.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             this.guna2CustomGradientPanel1.Quality = 100;
             this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(315, 549);
-            this.guna2CustomGradientPanel1.TabIndex = 0;
+            this.guna2CustomGradientPanel1.TabIndex = 1;
             // 
             // gbTypingMode
             // 
@@ -69,12 +70,11 @@
             this.gbTypingMode.ColorLighting = System.Drawing.Color.Black;
             this.gbTypingMode.ColorPen_1 = System.Drawing.Color.Empty;
             this.gbTypingMode.ColorPen_2 = System.Drawing.Color.Empty;
-            this.gbTypingMode.Controls.Add(this.label3);
-            this.gbTypingMode.Controls.Add(this.btnDownWords);
-            this.gbTypingMode.Controls.Add(this.lblTimeValue);
+            this.gbTypingMode.Controls.Add(this.btnFinsihTyping);
             this.gbTypingMode.Controls.Add(this.label1);
             this.gbTypingMode.Controls.Add(this.tbTime);
             this.gbTypingMode.Controls.Add(this.label2);
+            this.gbTypingMode.Controls.Add(this.lblTimeLeft);
             this.gbTypingMode.CyberGroupBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
             this.gbTypingMode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbTypingMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
@@ -94,52 +94,28 @@
             this.gbTypingMode.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.gbTypingMode.Timer_RGB = 300;
             // 
-            // label3
+            // btnFinsihTyping
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.label3.Location = new System.Drawing.Point(111, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 32);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Per Minute";
-            // 
-            // btnDownWords
-            // 
-            this.btnDownWords.Animated = true;
-            this.btnDownWords.BorderRadius = 30;
-            this.btnDownWords.BorderThickness = 3;
-            this.btnDownWords.CheckedState.Parent = this.btnDownWords;
-            this.btnDownWords.CustomImages.Parent = this.btnDownWords;
-            this.btnDownWords.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnDownWords.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDownWords.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold);
-            this.btnDownWords.ForeColor = System.Drawing.Color.Black;
-            this.btnDownWords.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnDownWords.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnDownWords.HoverState.Font = new System.Drawing.Font("Nirmala UI", 20.8F, System.Drawing.FontStyle.Bold);
-            this.btnDownWords.HoverState.Parent = this.btnDownWords;
-            this.btnDownWords.Location = new System.Drawing.Point(30, 412);
-            this.btnDownWords.Name = "btnDownWords";
-            this.btnDownWords.ShadowDecoration.Parent = this.btnDownWords;
-            this.btnDownWords.Size = new System.Drawing.Size(243, 99);
-            this.btnDownWords.TabIndex = 5;
-            this.btnDownWords.Text = "Start";
-            this.btnDownWords.Click += new System.EventHandler(this.btnDownWords_Click);
-            // 
-            // lblTimeValue
-            // 
-            this.lblTimeValue.AutoSize = true;
-            this.lblTimeValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimeValue.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold);
-            this.lblTimeValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.lblTimeValue.Location = new System.Drawing.Point(20, 172);
-            this.lblTimeValue.Name = "lblTimeValue";
-            this.lblTimeValue.Size = new System.Drawing.Size(44, 58);
-            this.lblTimeValue.TabIndex = 4;
-            this.lblTimeValue.Text = "1";
+            this.btnFinsihTyping.Animated = true;
+            this.btnFinsihTyping.BorderRadius = 30;
+            this.btnFinsihTyping.BorderThickness = 3;
+            this.btnFinsihTyping.CheckedState.Parent = this.btnFinsihTyping;
+            this.btnFinsihTyping.CustomImages.Parent = this.btnFinsihTyping;
+            this.btnFinsihTyping.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnFinsihTyping.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnFinsihTyping.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold);
+            this.btnFinsihTyping.ForeColor = System.Drawing.Color.Black;
+            this.btnFinsihTyping.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnFinsihTyping.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnFinsihTyping.HoverState.Font = new System.Drawing.Font("Nirmala UI", 20.8F, System.Drawing.FontStyle.Bold);
+            this.btnFinsihTyping.HoverState.Parent = this.btnFinsihTyping;
+            this.btnFinsihTyping.Location = new System.Drawing.Point(30, 412);
+            this.btnFinsihTyping.Name = "btnFinsihTyping";
+            this.btnFinsihTyping.ShadowDecoration.Parent = this.btnFinsihTyping;
+            this.btnFinsihTyping.Size = new System.Drawing.Size(243, 99);
+            this.btnFinsihTyping.TabIndex = 5;
+            this.btnFinsihTyping.Text = "Finish";
+            this.btnFinsihTyping.Click += new System.EventHandler(this.btnFinsihTyping_Click);
             // 
             // label1
             // 
@@ -149,9 +125,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.label1.Location = new System.Drawing.Point(20, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 45);
+            this.label1.Size = new System.Drawing.Size(279, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Select Your Test!";
+            this.label1.Text = "Round Running..";
             // 
             // tbTime
             // 
@@ -159,16 +135,18 @@
             this.tbTime.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.tbTime.HoverState.Parent = this.tbTime;
             this.tbTime.HoverState.ThumbColor = System.Drawing.Color.Lime;
-            this.tbTime.LargeChange = 2;
-            this.tbTime.Location = new System.Drawing.Point(82, 176);
+            this.tbTime.LargeChange = 0;
+            this.tbTime.Location = new System.Drawing.Point(102, 176);
             this.tbTime.Maximum = 5;
-            this.tbTime.Minimum = 1;
+            this.tbTime.MouseWheelBarPartitions = 1;
             this.tbTime.Name = "tbTime";
             this.tbTime.Size = new System.Drawing.Size(191, 40);
+            this.tbTime.SmallChange = 0;
             this.tbTime.TabIndex = 3;
+            this.tbTime.TabStop = false;
             this.tbTime.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.tbTime.Value = 1;
-            this.tbTime.ValueChanged += new System.EventHandler(this.tbTime_ValueChanged);
+            this.tbTime.Scroll += new System.Windows.Forms.ScrollEventHandler(this.tbTime_Scroll);
             // 
             // label2
             // 
@@ -178,20 +156,36 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.label2.Location = new System.Drawing.Point(20, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 58);
+            this.label2.Size = new System.Drawing.Size(171, 58);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Time";
+            this.label2.Text = "Time Left";
             // 
-            // TypingSettings
+            // lblTimeLeft
+            // 
+            this.lblTimeLeft.AutoSize = true;
+            this.lblTimeLeft.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimeLeft.Font = new System.Drawing.Font("Myanmar Text", 15.8F, System.Drawing.FontStyle.Bold);
+            this.lblTimeLeft.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.lblTimeLeft.Location = new System.Drawing.Point(20, 176);
+            this.lblTimeLeft.Name = "lblTimeLeft";
+            this.lblTimeLeft.Size = new System.Drawing.Size(75, 48);
+            this.lblTimeLeft.TabIndex = 4;
+            this.lblTimeLeft.Text = "0:00";
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // TypingRoundStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(315, 549);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TypingSettings";
-            this.Text = "TypingSettings";
+            this.Name = "TypingRoundStatus";
+            this.Text = "TypingRoundStatus";
+            this.Load += new System.EventHandler(this.TypingRoundStatus_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.gbTypingMode.ResumeLayout(false);
             this.gbTypingMode.PerformLayout();
@@ -202,12 +196,12 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
+        private ReaLTaiizor.Controls.CyberGroupBox gbTypingMode;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnFinsihTyping;
+        private System.Windows.Forms.Label lblTimeLeft;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TrackBar tbTime;
-        private System.Windows.Forms.Label lblTimeValue;
         private System.Windows.Forms.Label label2;
-        private ReaLTaiizor.Controls.CyberGroupBox gbTypingMode;
-        private Guna.UI2.WinForms.Guna2GradientTileButton btnDownWords;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer timer;
     }
 }

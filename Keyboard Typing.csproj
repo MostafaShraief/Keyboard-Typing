@@ -65,10 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeyboardTyping.cs">
+    <Compile Include="Right Panel\KeyboardTyping.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KeyboardTyping.Designer.cs">
+    <Compile Include="Right Panel\KeyboardTyping.Designer.cs">
       <DependentUpon>KeyboardTyping.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
@@ -79,13 +79,31 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Right Panel\MainMenuScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Right Panel\MainMenuScreen.Designer.cs">
+      <DependentUpon>MainMenuScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Status Panel\TypingRoundStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status Panel\TypingRoundStatus.Designer.cs">
+      <DependentUpon>TypingRoundStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Status Panel\TypingRounfResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status Panel\TypingRounfResult.Designer.cs">
+      <DependentUpon>TypingRounfResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="Status Panel\TypingSettings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Status Panel\TypingSettings.Designer.cs">
       <DependentUpon>TypingSettings.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="KeyboardTyping.resx">
+    <EmbeddedResource Include="Right Panel\KeyboardTyping.resx">
       <DependentUpon>KeyboardTyping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -101,6 +119,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Right Panel\MainMenuScreen.resx">
+      <DependentUpon>MainMenuScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status Panel\TypingRoundStatus.resx">
+      <DependentUpon>TypingRoundStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Status Panel\TypingRounfResult.resx">
+      <DependentUpon>TypingRounfResult.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Status Panel\TypingSettings.resx">
       <DependentUpon>TypingSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,7 +145,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telegram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linkedin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

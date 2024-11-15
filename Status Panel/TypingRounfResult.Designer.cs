@@ -1,6 +1,6 @@
 ﻿namespace Keyboard_Typing.Status_Panel
 {
-    partial class TypingSettings
+    partial class TypingRounfResult
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,14 @@
         {
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.gbTypingMode = new ReaLTaiizor.Controls.CyberGroupBox();
+            this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDownWords = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.lblTimeValue = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbTime = new Guna.UI2.WinForms.Guna2TrackBar();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.gbTypingMode.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +55,7 @@
             this.guna2CustomGradientPanel1.Quality = 100;
             this.guna2CustomGradientPanel1.ShadowDecoration.Parent = this.guna2CustomGradientPanel1;
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(315, 549);
-            this.guna2CustomGradientPanel1.TabIndex = 0;
+            this.guna2CustomGradientPanel1.TabIndex = 1;
             // 
             // gbTypingMode
             // 
@@ -69,12 +71,14 @@
             this.gbTypingMode.ColorLighting = System.Drawing.Color.Black;
             this.gbTypingMode.ColorPen_1 = System.Drawing.Color.Empty;
             this.gbTypingMode.ColorPen_2 = System.Drawing.Color.Empty;
+            this.gbTypingMode.Controls.Add(this.guna2GradientTileButton1);
+            this.gbTypingMode.Controls.Add(this.label4);
             this.gbTypingMode.Controls.Add(this.label3);
             this.gbTypingMode.Controls.Add(this.btnDownWords);
             this.gbTypingMode.Controls.Add(this.lblTimeValue);
             this.gbTypingMode.Controls.Add(this.label1);
-            this.gbTypingMode.Controls.Add(this.tbTime);
             this.gbTypingMode.Controls.Add(this.label2);
+            this.gbTypingMode.Controls.Add(this.label5);
             this.gbTypingMode.CyberGroupBoxStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
             this.gbTypingMode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gbTypingMode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
@@ -94,17 +98,52 @@
             this.gbTypingMode.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             this.gbTypingMode.Timer_RGB = 300;
             // 
+            // guna2GradientTileButton1
+            // 
+            this.guna2GradientTileButton1.Animated = true;
+            this.guna2GradientTileButton1.BorderRadius = 30;
+            this.guna2GradientTileButton1.BorderThickness = 3;
+            this.guna2GradientTileButton1.CheckedState.Parent = this.guna2GradientTileButton1;
+            this.guna2GradientTileButton1.CustomImages.Parent = this.guna2GradientTileButton1;
+            this.guna2GradientTileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2GradientTileButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.Black;
+            this.guna2GradientTileButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2GradientTileButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2GradientTileButton1.HoverState.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientTileButton1.HoverState.Parent = this.guna2GradientTileButton1;
+            this.guna2GradientTileButton1.Location = new System.Drawing.Point(28, 429);
+            this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
+            this.guna2GradientTileButton1.ShadowDecoration.Parent = this.guna2GradientTileButton1;
+            this.guna2GradientTileButton1.Size = new System.Drawing.Size(241, 99);
+            this.guna2GradientTileButton1.TabIndex = 8;
+            this.guna2GradientTileButton1.Text = "Change Mode";
+            this.guna2GradientTileButton1.Click += new System.EventHandler(this.guna2GradientTileButton1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.label4.Location = new System.Drawing.Point(233, 181);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 58);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "1";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.label3.Location = new System.Drawing.Point(111, 115);
+            this.label3.Location = new System.Drawing.Point(30, 181);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 32);
+            this.label3.Size = new System.Drawing.Size(198, 58);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Per Minute";
+            this.label3.Text = "Total Time:";
             // 
             // btnDownWords
             // 
@@ -121,12 +160,12 @@
             this.btnDownWords.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDownWords.HoverState.Font = new System.Drawing.Font("Nirmala UI", 20.8F, System.Drawing.FontStyle.Bold);
             this.btnDownWords.HoverState.Parent = this.btnDownWords;
-            this.btnDownWords.Location = new System.Drawing.Point(30, 412);
+            this.btnDownWords.Location = new System.Drawing.Point(26, 272);
             this.btnDownWords.Name = "btnDownWords";
             this.btnDownWords.ShadowDecoration.Parent = this.btnDownWords;
             this.btnDownWords.Size = new System.Drawing.Size(243, 99);
             this.btnDownWords.TabIndex = 5;
-            this.btnDownWords.Text = "Start";
+            this.btnDownWords.Text = "Start Again";
             this.btnDownWords.Click += new System.EventHandler(this.btnDownWords_Click);
             // 
             // lblTimeValue
@@ -135,7 +174,7 @@
             this.lblTimeValue.BackColor = System.Drawing.Color.Transparent;
             this.lblTimeValue.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold);
             this.lblTimeValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.lblTimeValue.Location = new System.Drawing.Point(20, 172);
+            this.lblTimeValue.Location = new System.Drawing.Point(154, 102);
             this.lblTimeValue.Name = "lblTimeValue";
             this.lblTimeValue.Size = new System.Drawing.Size(44, 58);
             this.lblTimeValue.TabIndex = 4;
@@ -143,7 +182,6 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
@@ -151,24 +189,8 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(274, 45);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Select Your Test!";
-            // 
-            // tbTime
-            // 
-            this.tbTime.BackColor = System.Drawing.Color.Transparent;
-            this.tbTime.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tbTime.HoverState.Parent = this.tbTime;
-            this.tbTime.HoverState.ThumbColor = System.Drawing.Color.Lime;
-            this.tbTime.LargeChange = 2;
-            this.tbTime.Location = new System.Drawing.Point(82, 176);
-            this.tbTime.Maximum = 5;
-            this.tbTime.Minimum = 1;
-            this.tbTime.Name = "tbTime";
-            this.tbTime.Size = new System.Drawing.Size(191, 40);
-            this.tbTime.TabIndex = 3;
-            this.tbTime.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tbTime.Value = 1;
-            this.tbTime.ValueChanged += new System.EventHandler(this.tbTime_ValueChanged);
+            this.label1.Text = "Round Result!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -176,22 +198,33 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.label2.Location = new System.Drawing.Point(20, 102);
+            this.label2.Location = new System.Drawing.Point(30, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 58);
+            this.label2.Size = new System.Drawing.Size(119, 58);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Time";
+            this.label2.Text = "WPM:";
             // 
-            // TypingSettings
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.label5.Location = new System.Drawing.Point(117, 377);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 58);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Or";
+            // 
+            // TypingRounfResult
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(315, 549);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TypingSettings";
-            this.Text = "TypingSettings";
+            this.Name = "TypingRounfResult";
+            this.Text = "TypingRounfResult";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.gbTypingMode.ResumeLayout(false);
             this.gbTypingMode.PerformLayout();
@@ -202,12 +235,14 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TrackBar tbTime;
-        private System.Windows.Forms.Label lblTimeValue;
-        private System.Windows.Forms.Label label2;
         private ReaLTaiizor.Controls.CyberGroupBox gbTypingMode;
         private Guna.UI2.WinForms.Guna2GradientTileButton btnDownWords;
+        private System.Windows.Forms.Label lblTimeValue;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
+        private System.Windows.Forms.Label label5;
     }
 }
