@@ -107,13 +107,13 @@
             this.guna2GradientTileButton1.CustomImages.Parent = this.guna2GradientTileButton1;
             this.guna2GradientTileButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.guna2GradientTileButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Nirmala UI", 18.8F, System.Drawing.FontStyle.Bold);
             this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientTileButton1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.guna2GradientTileButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.guna2GradientTileButton1.HoverState.Font = new System.Drawing.Font("Nirmala UI", 19.8F, System.Drawing.FontStyle.Bold);
             this.guna2GradientTileButton1.HoverState.Parent = this.guna2GradientTileButton1;
-            this.guna2GradientTileButton1.Location = new System.Drawing.Point(28, 429);
+            this.guna2GradientTileButton1.Location = new System.Drawing.Point(37, 412);
             this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
             this.guna2GradientTileButton1.ShadowDecoration.Parent = this.guna2GradientTileButton1;
             this.guna2GradientTileButton1.Size = new System.Drawing.Size(241, 99);
@@ -160,7 +160,7 @@
             this.btnDownWords.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnDownWords.HoverState.Font = new System.Drawing.Font("Nirmala UI", 20.8F, System.Drawing.FontStyle.Bold);
             this.btnDownWords.HoverState.Parent = this.btnDownWords;
-            this.btnDownWords.Location = new System.Drawing.Point(26, 272);
+            this.btnDownWords.Location = new System.Drawing.Point(36, 255);
             this.btnDownWords.Name = "btnDownWords";
             this.btnDownWords.ShadowDecoration.Parent = this.btnDownWords;
             this.btnDownWords.Size = new System.Drawing.Size(243, 99);
@@ -210,7 +210,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.label5.Location = new System.Drawing.Point(117, 377);
+            this.label5.Location = new System.Drawing.Point(126, 360);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 58);
             this.label5.TabIndex = 9;
