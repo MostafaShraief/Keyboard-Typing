@@ -36,12 +36,12 @@ namespace Keyboard_Typing.Status_Panel
         void Stop()
         {
             timer.Enabled = false;
-            Program.mainformobject.ShowKeyboardTypingResult(0);
+            Program.mainformobject.ShowKeyboardTypingResult();
         }
 
         private void TypingRoundStatus_Load(object sender, EventArgs e)
         {
-            remainingtime = Program.mainformobject.Minutes * 60;
+            remainingtime = Program.mainformobject.TotalMinutes * 60;
             tbTime.Maximum = remainingtime;
             StartTimer();
             TimeChanging();
@@ -58,6 +58,9 @@ namespace Keyboard_Typing.Status_Panel
                 Stop();
                 return;
             }
+
+            if (remainingtime % 60 == 0)
+                Program.mainformobject.MinutesOfTyping++;
         }
 
         private void tbTime_Scroll(object sender, ScrollEventArgs e)

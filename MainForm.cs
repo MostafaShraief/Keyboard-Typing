@@ -10,22 +10,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Keyboard_Typing.MainForm;
 
 namespace Keyboard_Typing
 {
     public partial class MainForm : Form
     {
-        internal int Minutes;
+        internal int TotalMinutes;
+        // If the user click finish before the round is end, then we want this to calculate WPM.
+        internal int MinutesOfTyping;
 
         public MainForm()
         {
             InitializeComponent();
         }
 
+        internal struct stRoundStatus
+        {
+            public int WPM;
+            public int cntWrongChars;
+            public int cntTotalChars;
+            public float Accuracy;
+        }
+
+        internal stRoundStatus RoundStatus;
+
         private void LoadForm(Form form, Panel panel)
         {
             if (panel.Controls.Count > 0)
+            {
+                panel.Controls[0].Dispose();
                 panel.Controls.Clear();
+            }
 
             panel.Enabled = true;
             if (form != null)
@@ -80,23 +96,42 @@ namespace Keyboard_Typing
         {
             TakeTypingTest();
         }
-
+        
         internal void StartKeyboardTyping(int minutes)
         {
-            Minutes = minutes;
+            TotalMinutes = minutes;
+            MinutesOfTyping = 1;
+            // Reset data in 'RoundStatus'.
+            RoundStatus = new stRoundStatus();
             // Load 'KeyboardTyping' form.
             LoadForm(new KeyboardTyping(), scMain.Panel2);
             // Load 'TypingRoundStatus' form.
             LoadForm(new TypingRoundStatus(), pnlStatus);
+            scMain.Panel2.Controls[0].Focus();
         }
 
-        internal void ShowKeyboardTypingResult(int WPN)
+        internal void ShowKeyboardTypingResult()
         {
             // Stop typing by disable the right panel.
             scMain.Panel2.Enabled = false;
 
+            CalculateWPMandAccuracy();
             // Load 'TypingRounfResult' form.
             LoadForm(new TypingRounfResult(), pnlStatus);
+        }
+
+        void CalculateWPMandAccuracy()
+        {
+            // Calculate WPM.
+            RoundStatus.WPM /= MinutesOfTyping;
+
+            int cntCorrectChars = RoundStatus.cntTotalChars - RoundStatus.cntWrongChars;
+
+            // Calculate accuracy.
+            if (RoundStatus.cntTotalChars > 0)
+                RoundStatus.Accuracy = (float)(cntCorrectChars * 100) / RoundStatus.cntTotalChars;
+            else
+                RoundStatus.Accuracy = 0;
         }
     }
 }

@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Keyboard_Typing
 {
     public partial class KeyboardTyping : Form
@@ -194,6 +195,7 @@ namespace Keyboard_Typing
             RestoreKeyboardButtonsStatus(); // Restore default settings for all buttons.
             rtxtInput.Enabled = false; // stop enter more characters.
             rtxtOutput.Enabled = false; // to ignore typing in 'rtxtoutput'.
+            Program.mainformobject.ShowKeyboardTypingResult();
         }
 
         void ChangeCharProperties(int ind, int range, Color forecolor, Color backgroundcolor, FontStyle fontStyle = FontStyle.Regular)
@@ -222,6 +224,7 @@ namespace Keyboard_Typing
                 else
                 {
                     ChangeCharProperties(pos, 1, Settings.WrongtxtColor, Settings.WrongBackgroundtxtColor);
+                    Program.mainformobject.RoundStatus.cntWrongChars++;
                 }
             }
         }
@@ -250,11 +253,16 @@ namespace Keyboard_Typing
             return (text.Input.Length == text.Output.Length);
         }
 
-        void UpdateCharactersFormatting()
+        void Updatetext()
         {
-            // Get Input text.
+            // Get Input and output text.
             text.Input = rtxtInput.Text;
             text.Output = rtxtOutput.Text;
+        }
+
+        void UpdateCharactersFormatting()
+        {
+            Updatetext();
 
             // Formatting.
             HighlightCharacters();
@@ -298,11 +306,30 @@ namespace Keyboard_Typing
             Settings.ClickedButtonColor = Color.Blue;
         }
 
+        void AssignFocusRedirect()
+        {
+            foreach (Control control in this.Controls)
+            {
+                if (control != rtxtInput)
+                {
+                    control.Enter += RedirectFocus;
+                }
+            }
+            foreach (Control control in flp1.Controls)
+            {
+                if (control != rtxtInput)
+                {
+                    control.Enter += RedirectFocus;
+                }
+            }
+        }
+
         private void KeyboardTyping_Load(object sender, EventArgs e)
         {
             DefaultSettings();
             InitializeKeyboard();
             ChooseRandomStory();
+            AssignFocusRedirect();
         }
 
         private void rtxtInput_KeyDown(object sender, KeyEventArgs e)
@@ -316,7 +343,7 @@ namespace Keyboard_Typing
             KeyboardPress(e, false);
         }
 
-        private void rtxtOutput_Click(object sender, EventArgs e)
+        private void RedirectFocus(object sender, EventArgs e)
         {
             rtxtInput.Focus();
         }
@@ -326,6 +353,59 @@ namespace Keyboard_Typing
             // Get Output text.
             text.Output = rtxtOutput.Text;
         }
-        
+
+        void CalculateWPM()
+        {
+            bool Skip = false;
+
+            // Count all spaces and new lines that exists in output textbox according to
+            // text length in input textbox.
+            for (int i = 0; i < text.Input.Length; i++)
+            {
+                char incrntch = text.Input[i];
+                char outcrntch = text.Output[i];
+
+                if (incrntch != outcrntch)
+                    Skip = true;
+
+                if (outcrntch == '\n' || outcrntch == ' ')
+                {
+                    if (Skip)
+                        Skip = false;
+                    else
+                        ++Program.mainformobject.RoundStatus.WPM;
+                }
+            }
+        }
+
+        void GetRoundResult()
+        {
+            Updatetext();
+            // Total character typed in input textbox.
+            Program.mainformobject.RoundStatus.cntTotalChars = text.Input.Length;
+            // Calculate WPM result.
+            CalculateWPM();
+        }
+
+        private void KeyboardTyping_EnabledChanged(object sender, EventArgs e)
+        {
+            FocusNotification.Visible = this.Enabled;
+            GetRoundResult();
+        }
+
+        private void FocusNotification_Click(object sender, EventArgs e)
+        {
+            rtxtInput.Focus();
+        }
+
+        private void rtxtInput_Leave(object sender, EventArgs e)
+        {
+            FocusNotification.Visible = true;
+        }
+
+        private void rtxtInput_Enter(object sender, EventArgs e)
+        {
+            FocusNotification.Visible = false;
+        }
     }
 }

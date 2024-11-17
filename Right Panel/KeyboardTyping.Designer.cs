@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.scKeyboardTyping = new System.Windows.Forms.SplitContainer();
+            this.FocusNotification = new ReaLTaiizor.Controls.ForeverNotification();
             this.rtxtOutput = new System.Windows.Forms.RichTextBox();
             this.rtxtInput = new System.Windows.Forms.RichTextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -103,7 +104,7 @@
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.KeyboardElipseForm = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.scKeyboardTyping)).BeginInit();
             this.scKeyboardTyping.Panel1.SuspendLayout();
             this.scKeyboardTyping.Panel2.SuspendLayout();
@@ -125,12 +126,14 @@
             // 
             this.scKeyboardTyping.BackColor = System.Drawing.Color.White;
             this.scKeyboardTyping.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scKeyboardTyping.IsSplitterFixed = true;
             this.scKeyboardTyping.Location = new System.Drawing.Point(0, 0);
             this.scKeyboardTyping.Name = "scKeyboardTyping";
             this.scKeyboardTyping.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // scKeyboardTyping.Panel1
             // 
+            this.scKeyboardTyping.Panel1.Controls.Add(this.FocusNotification);
             this.scKeyboardTyping.Panel1.Controls.Add(this.rtxtOutput);
             this.scKeyboardTyping.Panel1.Controls.Add(this.rtxtInput);
             this.scKeyboardTyping.Panel1.Controls.Add(this.guna2Panel1);
@@ -144,6 +147,22 @@
             this.scKeyboardTyping.SplitterDistance = 368;
             this.scKeyboardTyping.TabIndex = 0;
             this.scKeyboardTyping.TabStop = false;
+            // 
+            // FocusNotification
+            // 
+            this.FocusNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(70)))), ((int)(((byte)(73)))));
+            this.FocusNotification.Close = true;
+            this.FocusNotification.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FocusNotification.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.FocusNotification.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.FocusNotification.Kind = ReaLTaiizor.Controls.ForeverNotification._Kind.Error;
+            this.FocusNotification.Location = new System.Drawing.Point(0, -8);
+            this.FocusNotification.Name = "FocusNotification";
+            this.FocusNotification.Size = new System.Drawing.Size(1059, 42);
+            this.FocusNotification.TabIndex = 4;
+            this.FocusNotification.Text = "You are not focus on typing!.. Click on me to restore focus.";
+            this.FocusNotification.Visible = false;
+            this.FocusNotification.Click += new System.EventHandler(this.FocusNotification_Click);
             // 
             // rtxtOutput
             // 
@@ -160,9 +179,9 @@
             this.rtxtOutput.TabIndex = 2;
             this.rtxtOutput.TabStop = false;
             this.rtxtOutput.Text = "text";
-            this.rtxtOutput.Click += new System.EventHandler(this.rtxtOutput_Click);
+            this.rtxtOutput.Click += new System.EventHandler(this.RedirectFocus);
             this.rtxtOutput.TextChanged += new System.EventHandler(this.rtxtOutput_TextChanged);
-            this.rtxtOutput.Enter += new System.EventHandler(this.rtxtOutput_Click);
+            this.rtxtOutput.Enter += new System.EventHandler(this.RedirectFocus);
             // 
             // rtxtInput
             // 
@@ -174,8 +193,11 @@
             this.rtxtInput.TabIndex = 1;
             this.rtxtInput.Text = "";
             this.rtxtInput.TextChanged += new System.EventHandler(this.rtxtInput_TextChanged);
+            this.rtxtInput.Enter += new System.EventHandler(this.rtxtInput_Enter);
             this.rtxtInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtxtInput_KeyDown);
             this.rtxtInput.KeyUp += new System.Windows.Forms.KeyEventHandler(this.rtxtInput_KeyUp);
+            this.rtxtInput.Leave += new System.EventHandler(this.rtxtInput_Leave);
+            this.rtxtInput.Validated += new System.EventHandler(this.rtxtInput_Leave);
             // 
             // guna2Panel1
             // 
@@ -1770,15 +1792,16 @@
             this.guna2PictureBox10.TabIndex = 91;
             this.guna2PictureBox10.TabStop = false;
             // 
-            // guna2Elipse1
+            // KeyboardElipseForm
             // 
-            this.guna2Elipse1.BorderRadius = 50;
-            this.guna2Elipse1.TargetControl = this;
+            this.KeyboardElipseForm.BorderRadius = 50;
+            this.KeyboardElipseForm.TargetControl = this;
             // 
             // KeyboardTyping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1059, 653);
             this.Controls.Add(this.scKeyboardTyping);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1786,6 +1809,9 @@
             this.Name = "KeyboardTyping";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.KeyboardTyping_Load);
+            this.Shown += new System.EventHandler(this.rtxtInput_Enter);
+            this.EnabledChanged += new System.EventHandler(this.KeyboardTyping_EnabledChanged);
+            this.Enter += new System.EventHandler(this.RedirectFocus);
             this.scKeyboardTyping.Panel1.ResumeLayout(false);
             this.scKeyboardTyping.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.scKeyboardTyping)).EndInit();
@@ -1880,8 +1906,9 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
         private System.Windows.Forms.RichTextBox rtxtInput;
         private System.Windows.Forms.RichTextBox rtxtOutput;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse KeyboardElipseForm;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private ReaLTaiizor.Controls.ForeverNotification FocusNotification;
     }
 }
 

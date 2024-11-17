@@ -114,6 +114,7 @@
             this.btnFinsihTyping.ShadowDecoration.Parent = this.btnFinsihTyping;
             this.btnFinsihTyping.Size = new System.Drawing.Size(243, 99);
             this.btnFinsihTyping.TabIndex = 5;
+            this.btnFinsihTyping.TabStop = false;
             this.btnFinsihTyping.Text = "Finish";
             this.btnFinsihTyping.Click += new System.EventHandler(this.btnFinsihTyping_Click);
             // 
